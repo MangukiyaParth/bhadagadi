@@ -3,7 +3,7 @@
 function add_vehicle_requirement()
 {
 	global $outputjson, $gh, $db, $const,$tz_name, $tz_offset, $loggedin_user;
-	$outputjson['success'] = 0;
+	$outputjson['status'] = 0;
 
 	$from = $gh->read("from");
 	$to = $gh->read("to");
@@ -26,6 +26,7 @@ function add_vehicle_requirement()
 		$contact_type_text = "Rate submission";
 	}
 	$comment = $gh->read("comment");
+	$budget = $gh->read("budget");
 	
     $dateNow = date('Y-m-d H:i:s');
 
@@ -58,6 +59,7 @@ function add_vehicle_requirement()
 		"contact_type"=>$contact_type,
 		"contact_type_text"=>$contact_type_text,
 		"comment"=>$comment,
+		"budget"=>$budget,
 		"created_by"=>$loggedin_user['id']
 	);
 	$result = $db->insert("tbl_vehicle_requirement", $tableData);

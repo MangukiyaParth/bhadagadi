@@ -3,7 +3,7 @@
 function get_available_vehicle()
 {
 	global $outputjson, $gh, $db, $const,$tz_name, $tz_offset, $loggedin_user;
-	$outputjson['success'] = 0;
+	$outputjson['status'] = 0;
     $dateNow = date('Y-m-d H:i:s');
 	$loggedin_user_id = $loggedin_user['id'];
 	$get_my_details = $gh->read("get_my_details", 0);
@@ -35,7 +35,7 @@ function get_available_vehicle()
     $available_vehicle_rows = $db->execute($available_vehicle_query);
     
     if ($available_vehicle_rows != null && is_array($available_vehicle_rows) && count($available_vehicle_rows) > 0) {
-		$outputjson['success'] = 1;
+		$outputjson['status'] = 1;
 		$outputjson['message'] = 'success.';
 		$outputjson["data"] = $available_vehicle_rows;
 	}

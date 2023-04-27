@@ -3,7 +3,7 @@
 function login_user()
 {
 	global $outputjson, $gh, $db, $const,$tz_name, $tz_offset, $phone_format;
-	$outputjson['success'] = 0;
+	$outputjson['status'] = 0;
 
 	$username = $gh->read("username");
 	$username = addslashes(str_replace('&apos;', "'", $username));
@@ -46,7 +46,7 @@ function login_user()
                 $db->update("tbl_users", $update, array("user_id" => $user["user_id"]));
             }
 
-            $outputjson['success'] = 1;
+            $outputjson['status'] = 1;
             $outputjson['global_search_flag'] = 1;
 			$outputjson['message'] = 'User logged in successfully.';
 

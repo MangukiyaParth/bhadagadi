@@ -7,7 +7,7 @@ error_reporting(0);
 error_reporting(E_ALL);
 date_default_timezone_set('Asia/Calcutta');
 // server credentials file
-require_once("_MANAGE_CONFIG.php");
+require_once(__DIR__."/../config/MANAGE_CONFIG.php");
 
 // for omr connection
 include_once("_idiorm.php");

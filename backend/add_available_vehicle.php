@@ -3,7 +3,7 @@
 function add_available_vehicle()
 {
 	global $outputjson, $gh, $db, $const,$tz_name, $tz_offset, $loggedin_user;
-	$outputjson['success'] = 0;
+	$outputjson['status'] = 0;
 
 	$from = $gh->read("from");
 	$to = $gh->read("to");

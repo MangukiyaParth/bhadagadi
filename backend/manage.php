@@ -25,9 +25,7 @@
 		$explode_token = explode('_', $token);
 		$md5_user_id = $explode_token[1];
 		
-		$query_loggedin_user = "SELECT usr.* FROM tbl_users as usr WHERE MD5(id) = '$md5_user_id'";
-		$loggedin_rows = $db->execute($query_loggedin_user);
-		$loggedin_userData = $loggedin_rows[0];
+		$loggedin_userData = getUsersDetails($md5_user_id, true);
 		$city_preferance = [];
 		$city_preferance_name = [];
 		if(!empty($loggedin_userData['city_preferance']))
@@ -58,7 +56,7 @@
 		$gh->Log($error);
 
 		$outputjson['message'] = "Something went wrong. This issue has been reported. Please try again.";
-		$outputjson['success'] = 0;
+		$outputjson['status'] = 0;
 		$outputjson['data'] = [];
 
 		$response_string = json_encode(($outputjson), JSON_PRETTY_PRINT);
@@ -94,7 +92,7 @@
 
 	if(!is_numeric($user_id)){
 		$outputjson['message'] = "Invalid User ID. Must be an integer.";
-		$outputjson['success'] = 0;
+		$outputjson['status'] = 0;
 		$response_string = json_encode($outputjson, JSON_PRETTY_PRINT);
 		echo $response_string;
 		return;
@@ -105,9 +103,9 @@
 			if (count($user) > 0) {
 				$userObj = $user[0];
 				$gh->current_user = $userObj;
-				if ($userObj['is_deleted']) {
+				if ($userObj['account_status'] == 4) {
 					$outputjson['message'] = "Your account is susspended, please contact admin";
-					$outputjson['success'] = 0;
+					$outputjson['status'] = 0;
 					$response_string = json_encode($outputjson, JSON_PRETTY_PRINT);
 					echo $response_string;
 					return;
@@ -129,18 +127,8 @@
 					$operation($params);
 					/***AUDIT LOG START****/
 					$str_arr = explode ("_", $operation);
-
-					if(  $str_arr[0]=='add'
-						|| $str_arr[0]=='save' 
-						|| $str_arr[0]=='update'
-						|| $str_arr[0]=='delete' 
-						|| $str_arr[0]=='login'
-						|| $str_arr[0]=='apply'
-					)
-					{
-						include("log_manage.php");
-						log_manage($params,$outputjson,$operation) ;
-					}
+					include("log_manage.php");
+					log_manage($params,$outputjson,$operation) ;
 					/***AUDIT LOG OVER****/
 
 				} else {
@@ -182,6 +170,21 @@
 	$response_string = str_replace('\/', "/", $response_string);
 	echo $response_string;
 
+	function getUsersDetails($id, $is_md5) {
+		global $db;
+		if($is_md5)
+		{
+			$query_user = "SELECT usr.* FROM tbl_users as usr WHERE md5(id) = '$id'";
+			$rows = $db->execute($query_user);
+		}
+		else
+		{
+			$query_user = "SELECT usr.* FROM tbl_users as usr WHERE id = $id";
+			$rows = $db->execute($query_user);
+		}
+		return $rows[0];
+	}
+	
 	function stripslashes_recursively($value) {
 		// echo $value."+++";
 		if($value)

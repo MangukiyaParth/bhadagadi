@@ -3,7 +3,7 @@
 function update_user_documents()
 {
 	global $outputjson, $gh, $db, $const,$tz_name, $tz_offset, $md5_user_id;
-	$outputjson['success'] = 0;
+	$outputjson['status'] = 0;
 
 	$token = $gh->read("token");
     $dateNow = date('Y-m-d H:i:s');
@@ -12,9 +12,7 @@ function update_user_documents()
 	$adhar_front = $_FILES['adhar_front'];
 	$adhar_back = $_FILES['adhar_back'];
 
-	$query_chk_user = "SELECT usr.* FROM tbl_users as usr WHERE MD5(id) = '$md5_user_id'";
-	$chk_rows = $db->execute($query_chk_user);
-	$chk_row = $chk_rows[0];
+	$chk_row = getUsersDetails($md5_user_id, true);;
 	$dl_front_path = $chk_row['dl_front'];
 	if($dl_front != "")
 	{
@@ -64,14 +62,13 @@ function update_user_documents()
 		"dl_back"=>$dl_back_path,
 		"adhar_front"=>$adhar_front_path,
 		"adhar_back"=>$adhar_back_path,
+		"account_status"=>2, // Pending
 	);
 	$result = $db->update("tbl_users", $tableData, array("MD5(id)"=>$md5_user_id));
 
-	$query_user = "SELECT usr.* FROM tbl_users as usr WHERE MD5(id) = '$md5_user_id'";
-	$rows = $db->execute($query_user);
 	$outputjson['message'] = "data updated successfully";
 	$outputjson['status'] = 1;
-	$outputjson['data'] = $rows[0];
+	$outputjson['data'] = getUsersDetails($md5_user_id, true);
 
 }
 

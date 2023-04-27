@@ -2,7 +2,7 @@
 function apply_for_rates()
 {
 	global $outputjson, $gh, $db, $const,$tz_name, $tz_offset, $loggedin_user;
-	$outputjson['success'] = 0;
+	$outputjson['status'] = 0;
 
 	$id = $gh->read("id");
 	$trip_rate = $gh->read("trip_rate");

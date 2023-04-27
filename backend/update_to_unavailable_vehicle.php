@@ -3,7 +3,7 @@
 function update_to_unavailable_vehicle()
 {
 	global $outputjson, $gh, $db, $const,$tz_name, $tz_offset, $loggedin_user;
-	$outputjson['success'] = 0;
+	$outputjson['status'] = 0;
     $dateNow = date('Y-m-d H:i:s');
 	$id = $gh->read("id", 0);
 
@@ -17,7 +17,7 @@ function update_to_unavailable_vehicle()
 			return;
 		}
 		$db->update("tbl_available_vehicle", array("status"=>1),array("id"=>$id));
-		$outputjson['success'] = 1;
+		$outputjson['status'] = 1;
 		$outputjson['message'] = 'Vehicle set to unavailable successfully.';
 	}
 	else {

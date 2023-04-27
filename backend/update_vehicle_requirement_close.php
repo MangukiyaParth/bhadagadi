@@ -3,7 +3,7 @@
 function update_vehicle_requirement_close()
 {
 	global $outputjson, $gh, $db, $const,$tz_name, $tz_offset, $loggedin_user;
-	$outputjson['success'] = 0;
+	$outputjson['status'] = 0;
     $dateNow = date('Y-m-d H:i:s');
 	$id = $gh->read("id", 0);
 
@@ -17,7 +17,7 @@ function update_vehicle_requirement_close()
 			return;
 		}
 		$db->update("tbl_vehicle_requirement", array("status"=>1),array("id"=>$id));
-		$outputjson['success'] = 1;
+		$outputjson['status'] = 1;
 		$outputjson['message'] = 'Requirement closed successfully.';
 	}
 	else {

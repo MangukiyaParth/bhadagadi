@@ -11,7 +11,7 @@ function log_manage($param = array(),$output = array(),$operation = '')
     if($operation!='')
     {
         $str_arr = explode ("_", $operation);
-        if($str_arr[0]=='login' && $output['success']==1)
+        if($str_arr[0]=='login' && $output['status']==1)
         {
             $user_id = $output['data']['user']['user_id'];
         }
@@ -22,7 +22,7 @@ function log_manage($param = array(),$output = array(),$operation = '')
             , 'action' => ''
             , 'operation' => $operation
             , 'from' => $from
-            , 'status' => $output['success']
+            , 'status' => $output['status']
             , 'date_added' => date("Y-m-d H:i:s")
             , 'date_modified' => date("Y-m-d H:i:s")
             , 'custom_text' => $custom_text
@@ -77,7 +77,7 @@ function log_manage($param = array(),$output = array(),$operation = '')
         }
         $data['ip_address'] = $ipaddress = $gh->get_client_ip();
         
-        if(!($str_arr[0]=='login' && empty($output['success']))){
+        if(!($str_arr[0]=='login' && empty($output['status']))){
 
             $log_id = $db->insert("tbl_audit_logs", $data);            
             $gh->Log("audit_log_service > LOGID: $log_id");

@@ -1,0 +1,10 @@
+Download google closure compiler from github.
+https://mvnrepository.com/artifact/com.google.javascript/closure-compiler
+
+Put jar into C:\closurecompiler folder
+
+Go to admin_panel/ folder.. 
+
+Right click > Open Git Bash here.
+and then run ./js.sh file like linux..
+

@@ -1,0 +1,1547 @@
+
+2023-04-27 16:48:38: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:48:38: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:48:38: Array
+(
+    [0] => 1 Query Error: 
+    [1] => UPDATE tbl_banners SET `status`='0' WHERE 1=1 AND  `id`='1'
+)
+
+2023-04-27 16:48:38: Unknown column 'status' in 'field list'#0 E:\project\product\bhadagadi\backend\_DATABASE.php(102): mysqli->query('UPDATE tbl_bann...')
+#1 E:\project\product\bhadagadi\backend\_DATABASE.php(264): MysqliDB->execute_query('UPDATE tbl_bann...')
+#2 E:\project\product\bhadagadi\backend\update_banner_status.php(21): MysqliDB->update('tbl_banners', Array, Array)
+#3 E:\project\product\bhadagadi\backend\manage.php(127): update_banner_status(Array)
+#4 {main}
+2023-04-27 16:48:38: Array
+(
+    [0] => 2 Query Error: 
+    [1] => UPDATE tbl_banners SET `status`='0' WHERE 1=1 AND  `id`='1'
+)
+
+2023-04-27 16:48:38: Unknown column 'status' in 'field list'#0 E:\project\product\bhadagadi\backend\_DATABASE.php(102): mysqli->query('UPDATE tbl_bann...')
+#1 E:\project\product\bhadagadi\backend\_DATABASE.php(264): MysqliDB->execute_query('UPDATE tbl_bann...')
+#2 E:\project\product\bhadagadi\backend\update_banner_status.php(21): MysqliDB->update('tbl_banners', Array, Array)
+#3 E:\project\product\bhadagadi\backend\manage.php(127): update_banner_status(Array)
+#4 {main}
+2023-04-27 16:48:38: Array
+(
+    [0] => 3 Query Error: 
+    [1] => UPDATE tbl_banners SET `status`='0' WHERE 1=1 AND  `id`='1'
+)
+
+2023-04-27 16:48:38: Unknown column 'status' in 'field list'#0 E:\project\product\bhadagadi\backend\_DATABASE.php(102): mysqli->query('UPDATE tbl_bann...')
+#1 E:\project\product\bhadagadi\backend\_DATABASE.php(264): MysqliDB->execute_query('UPDATE tbl_bann...')
+#2 E:\project\product\bhadagadi\backend\update_banner_status.php(21): MysqliDB->update('tbl_banners', Array, Array)
+#3 E:\project\product\bhadagadi\backend\manage.php(127): update_banner_status(Array)
+#4 {main}
+2023-04-27 16:48:38: audit_log_service > LOGID: 166
+2023-04-27 16:48:51: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:48:51: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:48:51: Array
+(
+    [0] => 1 Query Error: 
+    [1] => UPDATE tbl_banners SET `status`='0' WHERE 1=1 AND  `id`='1'
+)
+
+2023-04-27 16:48:51: Unknown column 'status' in 'field list'#0 E:\project\product\bhadagadi\backend\_DATABASE.php(102): mysqli->query('UPDATE tbl_bann...')
+#1 E:\project\product\bhadagadi\backend\_DATABASE.php(264): MysqliDB->execute_query('UPDATE tbl_bann...')
+#2 E:\project\product\bhadagadi\backend\update_banner_status.php(21): MysqliDB->update('tbl_banners', Array, Array)
+#3 E:\project\product\bhadagadi\backend\manage.php(127): update_banner_status(Array)
+#4 {main}
+2023-04-27 16:48:51: Array
+(
+    [0] => 2 Query Error: 
+    [1] => UPDATE tbl_banners SET `status`='0' WHERE 1=1 AND  `id`='1'
+)
+
+2023-04-27 16:48:51: Unknown column 'status' in 'field list'#0 E:\project\product\bhadagadi\backend\_DATABASE.php(102): mysqli->query('UPDATE tbl_bann...')
+#1 E:\project\product\bhadagadi\backend\_DATABASE.php(264): MysqliDB->execute_query('UPDATE tbl_bann...')
+#2 E:\project\product\bhadagadi\backend\update_banner_status.php(21): MysqliDB->update('tbl_banners', Array, Array)
+#3 E:\project\product\bhadagadi\backend\manage.php(127): update_banner_status(Array)
+#4 {main}
+2023-04-27 16:48:51: Array
+(
+    [0] => 3 Query Error: 
+    [1] => UPDATE tbl_banners SET `status`='0' WHERE 1=1 AND  `id`='1'
+)
+
+2023-04-27 16:48:51: Unknown column 'status' in 'field list'#0 E:\project\product\bhadagadi\backend\_DATABASE.php(102): mysqli->query('UPDATE tbl_bann...')
+#1 E:\project\product\bhadagadi\backend\_DATABASE.php(264): MysqliDB->execute_query('UPDATE tbl_bann...')
+#2 E:\project\product\bhadagadi\backend\update_banner_status.php(21): MysqliDB->update('tbl_banners', Array, Array)
+#3 E:\project\product\bhadagadi\backend\manage.php(127): update_banner_status(Array)
+#4 {main}
+2023-04-27 16:48:51: audit_log_service > LOGID: 168
+2023-04-27 16:50:14: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:50:14: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:50:14: Array
+(
+    [0] => 1 Query Error: 
+    [1] => UPDATE tbl_banners SET `status`='0' WHERE 1=1 AND  `id`='1'
+)
+
+2023-04-27 16:50:14: Unknown column 'status' in 'field list'#0 E:\project\product\bhadagadi\backend\_DATABASE.php(102): mysqli->query('UPDATE tbl_bann...')
+#1 E:\project\product\bhadagadi\backend\_DATABASE.php(264): MysqliDB->execute_query('UPDATE tbl_bann...')
+#2 E:\project\product\bhadagadi\backend\update_banner_status.php(21): MysqliDB->update('tbl_banners', Array, Array)
+#3 E:\project\product\bhadagadi\backend\manage.php(127): update_banner_status(Array)
+#4 {main}
+2023-04-27 16:50:14: Array
+(
+    [0] => 2 Query Error: 
+    [1] => UPDATE tbl_banners SET `status`='0' WHERE 1=1 AND  `id`='1'
+)
+
+2023-04-27 16:50:14: Unknown column 'status' in 'field list'#0 E:\project\product\bhadagadi\backend\_DATABASE.php(102): mysqli->query('UPDATE tbl_bann...')
+#1 E:\project\product\bhadagadi\backend\_DATABASE.php(264): MysqliDB->execute_query('UPDATE tbl_bann...')
+#2 E:\project\product\bhadagadi\backend\update_banner_status.php(21): MysqliDB->update('tbl_banners', Array, Array)
+#3 E:\project\product\bhadagadi\backend\manage.php(127): update_banner_status(Array)
+#4 {main}
+2023-04-27 16:50:14: Array
+(
+    [0] => 3 Query Error: 
+    [1] => UPDATE tbl_banners SET `status`='0' WHERE 1=1 AND  `id`='1'
+)
+
+2023-04-27 16:50:14: Unknown column 'status' in 'field list'#0 E:\project\product\bhadagadi\backend\_DATABASE.php(102): mysqli->query('UPDATE tbl_bann...')
+#1 E:\project\product\bhadagadi\backend\_DATABASE.php(264): MysqliDB->execute_query('UPDATE tbl_bann...')
+#2 E:\project\product\bhadagadi\backend\update_banner_status.php(21): MysqliDB->update('tbl_banners', Array, Array)
+#3 E:\project\product\bhadagadi\backend\manage.php(127): update_banner_status(Array)
+#4 {main}
+2023-04-27 16:50:14: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:50:14: audit_log_service > LOGID: 170
+2023-04-27 16:50:59: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:50:59: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:50:59: Array
+(
+    [0] => 1 Query Error: 
+    [1] => UPDATE tbl_banners SET `status`='0' WHERE 1=1 AND  `id`='1'
+)
+
+2023-04-27 16:50:59: Unknown column 'status' in 'field list'#0 E:\project\product\bhadagadi\backend\_DATABASE.php(102): mysqli->query('UPDATE tbl_bann...')
+#1 E:\project\product\bhadagadi\backend\_DATABASE.php(264): MysqliDB->execute_query('UPDATE tbl_bann...')
+#2 E:\project\product\bhadagadi\backend\update_banner_status.php(22): MysqliDB->update('tbl_banners', Array, Array)
+#3 E:\project\product\bhadagadi\backend\manage.php(127): update_banner_status(Array)
+#4 {main}
+2023-04-27 16:50:59: Array
+(
+    [0] => 2 Query Error: 
+    [1] => UPDATE tbl_banners SET `status`='0' WHERE 1=1 AND  `id`='1'
+)
+
+2023-04-27 16:50:59: Unknown column 'status' in 'field list'#0 E:\project\product\bhadagadi\backend\_DATABASE.php(102): mysqli->query('UPDATE tbl_bann...')
+#1 E:\project\product\bhadagadi\backend\_DATABASE.php(264): MysqliDB->execute_query('UPDATE tbl_bann...')
+#2 E:\project\product\bhadagadi\backend\update_banner_status.php(22): MysqliDB->update('tbl_banners', Array, Array)
+#3 E:\project\product\bhadagadi\backend\manage.php(127): update_banner_status(Array)
+#4 {main}
+2023-04-27 16:50:59: Array
+(
+    [0] => 3 Query Error: 
+    [1] => UPDATE tbl_banners SET `status`='0' WHERE 1=1 AND  `id`='1'
+)
+
+2023-04-27 16:50:59: Unknown column 'status' in 'field list'#0 E:\project\product\bhadagadi\backend\_DATABASE.php(102): mysqli->query('UPDATE tbl_bann...')
+#1 E:\project\product\bhadagadi\backend\_DATABASE.php(264): MysqliDB->execute_query('UPDATE tbl_bann...')
+#2 E:\project\product\bhadagadi\backend\update_banner_status.php(22): MysqliDB->update('tbl_banners', Array, Array)
+#3 E:\project\product\bhadagadi\backend\manage.php(127): update_banner_status(Array)
+#4 {main}
+2023-04-27 16:50:59: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:50:59: audit_log_service > LOGID: 171
+2023-04-27 16:51:21: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:21: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:21: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:21: audit_log_service > LOGID: 173
+2023-04-27 16:51:41: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:41: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:41: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:41: audit_log_service > LOGID: 176
+2023-04-27 16:51:41: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:41: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:41: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:41: audit_log_service > LOGID: 177
+2023-04-27 16:51:41: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:41: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:41: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:41: audit_log_service > LOGID: 178
+2023-04-27 16:51:41: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:41: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:41: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:41: audit_log_service > LOGID: 179
+2023-04-27 16:51:41: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:41: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:41: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:41: audit_log_service > LOGID: 180
+2023-04-27 16:51:41: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:41: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:41: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:41: audit_log_service > LOGID: 181
+2023-04-27 16:51:41: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:41: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:41: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:41: audit_log_service > LOGID: 182
+2023-04-27 16:51:41: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:41: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:41: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:41: audit_log_service > LOGID: 183
+2023-04-27 16:51:41: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:41: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:41: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:41: audit_log_service > LOGID: 184
+2023-04-27 16:51:42: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:42: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:42: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:42: audit_log_service > LOGID: 185
+2023-04-27 16:51:42: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:42: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:42: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:42: audit_log_service > LOGID: 186
+2023-04-27 16:51:42: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:42: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:42: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:42: audit_log_service > LOGID: 187
+2023-04-27 16:51:42: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:42: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:42: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:42: audit_log_service > LOGID: 188
+2023-04-27 16:51:42: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:42: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:42: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:42: audit_log_service > LOGID: 189
+2023-04-27 16:51:42: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:42: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:42: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:42: audit_log_service > LOGID: 190
+2023-04-27 16:51:42: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:42: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:42: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:42: audit_log_service > LOGID: 191
+2023-04-27 16:51:42: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:42: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:42: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:42: audit_log_service > LOGID: 192
+2023-04-27 16:51:42: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:42: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:42: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:42: audit_log_service > LOGID: 193
+2023-04-27 16:51:42: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:42: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:42: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:42: audit_log_service > LOGID: 194
+2023-04-27 16:51:42: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:42: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:42: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:42: audit_log_service > LOGID: 195
+2023-04-27 16:51:43: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:43: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:43: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:43: audit_log_service > LOGID: 196
+2023-04-27 16:51:43: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:43: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:43: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:43: audit_log_service > LOGID: 197
+2023-04-27 16:51:43: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:43: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:43: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:43: audit_log_service > LOGID: 198
+2023-04-27 16:51:43: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:43: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:43: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:43: audit_log_service > LOGID: 199
+2023-04-27 16:51:43: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:43: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:43: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:43: audit_log_service > LOGID: 200
+2023-04-27 16:51:43: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:43: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:43: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:43: audit_log_service > LOGID: 201
+2023-04-27 16:51:43: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:43: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:43: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:43: audit_log_service > LOGID: 202
+2023-04-27 16:51:43: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:43: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:43: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:43: audit_log_service > LOGID: 203
+2023-04-27 16:51:44: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:44: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:44: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:44: audit_log_service > LOGID: 204
+2023-04-27 16:51:44: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:44: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:44: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:44: audit_log_service > LOGID: 205
+2023-04-27 16:51:44: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:44: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:44: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:44: audit_log_service > LOGID: 206
+2023-04-27 16:51:44: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:44: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:44: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:44: audit_log_service > LOGID: 207
+2023-04-27 16:51:44: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:44: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:44: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:44: audit_log_service > LOGID: 208
+2023-04-27 16:51:44: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:44: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:44: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:44: audit_log_service > LOGID: 209
+2023-04-27 16:51:44: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:44: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:44: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:44: audit_log_service > LOGID: 210
+2023-04-27 16:51:44: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:44: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:44: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:44: audit_log_service > LOGID: 211
+2023-04-27 16:51:44: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:44: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:44: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:44: audit_log_service > LOGID: 212
+2023-04-27 16:51:44: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:44: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:44: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:44: audit_log_service > LOGID: 213
+2023-04-27 16:51:45: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:45: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:45: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:45: audit_log_service > LOGID: 214
+2023-04-27 16:51:45: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:45: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:45: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:45: audit_log_service > LOGID: 215
+2023-04-27 16:51:45: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:45: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:45: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:45: audit_log_service > LOGID: 216
+2023-04-27 16:51:45: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:45: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:45: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:45: audit_log_service > LOGID: 217
+2023-04-27 16:51:45: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:45: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:45: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:45: audit_log_service > LOGID: 218
+2023-04-27 16:51:45: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:45: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:45: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:45: audit_log_service > LOGID: 219
+2023-04-27 16:51:45: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:45: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:45: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:45: audit_log_service > LOGID: 220
+2023-04-27 16:51:45: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:45: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:45: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:45: audit_log_service > LOGID: 221
+2023-04-27 16:51:45: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:45: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:45: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:45: audit_log_service > LOGID: 222
+2023-04-27 16:51:46: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:46: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:46: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:46: audit_log_service > LOGID: 223
+2023-04-27 16:51:46: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:46: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:46: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:46: audit_log_service > LOGID: 224
+2023-04-27 16:51:46: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:46: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:46: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:46: audit_log_service > LOGID: 225
+2023-04-27 16:51:46: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:46: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:46: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:46: audit_log_service > LOGID: 226
+2023-04-27 16:51:46: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:46: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:46: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:46: audit_log_service > LOGID: 227
+2023-04-27 16:51:46: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:46: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:46: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:46: audit_log_service > LOGID: 228
+2023-04-27 16:51:46: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:46: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:46: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:46: audit_log_service > LOGID: 229
+2023-04-27 16:51:47: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:47: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:47: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:47: audit_log_service > LOGID: 230
+2023-04-27 16:51:47: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:47: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:47: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:47: audit_log_service > LOGID: 231
+2023-04-27 16:51:47: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:47: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:47: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:47: audit_log_service > LOGID: 232
+2023-04-27 16:51:47: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:47: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:47: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:47: audit_log_service > LOGID: 233
+2023-04-27 16:51:47: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:47: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:47: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:47: audit_log_service > LOGID: 234
+2023-04-27 16:51:47: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:47: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:47: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:47: audit_log_service > LOGID: 235
+2023-04-27 16:51:47: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:47: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:47: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:47: audit_log_service > LOGID: 236
+2023-04-27 16:51:47: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:47: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:47: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:47: audit_log_service > LOGID: 237
+2023-04-27 16:51:47: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:47: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:47: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:47: audit_log_service > LOGID: 238
+2023-04-27 16:51:48: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:48: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:48: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:48: audit_log_service > LOGID: 239
+2023-04-27 16:51:48: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:48: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:48: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:48: audit_log_service > LOGID: 240
+2023-04-27 16:51:48: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:51:48: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:51:48: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:51:48: audit_log_service > LOGID: 241
+2023-04-27 16:53:17: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:53:17: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:53:17: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:53:17: audit_log_service > LOGID: 244
+2023-04-27 16:53:20: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 16:53:20: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [106]: [Undefined array key "is_deleted"]
+2023-04-27 16:53:20: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 16:53:20: audit_log_service > LOGID: 245
+2023-04-27 17:18:58: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 17:18:58: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 17:18:58: audit_log_service > LOGID: 265
+2023-04-27 17:25:46: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => delete_banner
+    [id] => 1
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 17:25:46: query:delete:table=> tbl_banners, where=> 1=1 AND `id`='1'
+2023-04-27 17:25:46: audit_log_service > LOGID: 267
+2023-04-27 17:28:20: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 2
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 17:28:21: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 17:28:21: audit_log_service > LOGID: 271
+2023-04-27 17:28:23: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 2
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 17:28:23: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 17:28:23: audit_log_service > LOGID: 272
+2023-04-27 17:29:19: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 2
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 17:29:19: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 17:29:19: audit_log_service > LOGID: 274
+2023-04-27 17:29:21: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_banner_status
+    [id] => 2
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [curr_time] => 27-04-2023
+    [user_id] => 1
+)
+
+2023-04-27 17:29:21: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 17:29:21: audit_log_service > LOGID: 275

@@ -1,0 +1,3473 @@
+
+2023-04-26 12:37:55: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => add_user
+    [name] => test
+    [phone] => test
+    [password] => test
+    [business_name] => test
+    [business_description] => test
+    [email] => test@mail.com
+    [state_id] => 1
+    [city_id] => 2
+    [pin_code] => 23423
+    [role_id] => 2
+)
+
+2023-04-26 12:37:55: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\add_user.php] at line [42]: [Undefined variable $city]
+2023-04-26 12:37:55: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\add_user.php] at line [43]: [Undefined variable $cityData]
+2023-04-26 12:37:55: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\add_user.php] at line [43]: [Trying to access array offset on value of type null]
+2023-04-26 12:37:55: audit_log_service > LOGID: 129
+2023-04-26 12:38:48: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => add_user
+    [name] => test
+    [phone] => test
+    [password] => test
+    [business_name] => test
+    [business_description] => test
+    [email] => test@mail.com
+    [state_id] => 1
+    [city_id] => 2
+    [pin_code] => 23423
+    [role_id] => 2
+)
+
+2023-04-26 12:38:48: audit_log_service > LOGID: 130
+2023-04-26 13:29:00: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_user_city_prefrence
+    [token] => c7e4f6449615d89955d6272cdc3d5576_c81e728d9d4c2f636f067f89cc14862c
+    [city] => 3
+    [is_delete] => 
+)
+
+2023-04-26 13:29:00: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [178]: [Undefined variable $result]
+2023-04-26 13:29:00: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\manage.php] at line [179]: [Undefined variable $db]
+2023-04-26 13:29:00: Service Error: Call to a member function execute() on null
+[ 0 ] #0 E:\project\product\bhadagadi\backend\update_user_city_prefrence.php(18): getUsersDetails('c81e728d9d4c2f6...', true)
+#1 E:\project\product\bhadagadi\backend\manage.php(129): update_user_city_prefrence(Array)
+#2 {main}
+2023-04-26 13:30:39: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_user_city_prefrence
+    [token] => c7e4f6449615d89955d6272cdc3d5576_c81e728d9d4c2f636f067f89cc14862c
+    [city] => 3
+    [is_delete] => 
+)
+
+2023-04-26 13:30:39: audit_log_service > LOGID: 131
+2023-04-26 15:26:01: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => 127.0.0.1
+    [operation] => login_user
+    [cookie_id] => c7JFr4NljavQT4IGmI1Mkw%3D%3D
+)
+
+2023-04-26 15:26:01: ServiceErrorHandler Error: #[8192] occurred in [E:\project\product\bhadagadi\backend\login_user.php] at line [9]: [str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated]
+2023-04-26 15:26:04: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => login_user
+    [username] => admin
+    [password] => admin
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [curr_time] => 26-04-2023
+)
+
+2023-04-26 15:26:04: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\login_user.php] at line [35]: [Undefined array key "is_deleted"]
+2023-04-26 15:26:04: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\login_user.php] at line [46]: [Undefined array key "user_id"]
+2023-04-26 15:26:04: ServiceErrorHandler Error: #[8192] occurred in [E:\project\product\bhadagadi\backend\_DATABASE.php] at line [257]: [mysqli::real_escape_string(): Passing null to parameter #1 ($string) of type string is deprecated]
+2023-04-26 15:26:04: Array
+(
+    [0] => 1 Query Error: 
+    [1] => UPDATE tbl_users SET `last_logged_in`='2023-04-26 15:26:04' WHERE 1=1 AND  `user_id`=''
+)
+
+2023-04-26 15:26:04: Unknown column 'user_id' in 'where clause'#0 E:\project\product\bhadagadi\backend\_DATABASE.php(102): mysqli->query('UPDATE tbl_user...')
+#1 E:\project\product\bhadagadi\backend\_DATABASE.php(264): MysqliDB->execute_query('UPDATE tbl_user...')
+#2 E:\project\product\bhadagadi\backend\login_user.php(46): MysqliDB->update('tbl_users', Array, Array)
+#3 E:\project\product\bhadagadi\backend\manage.php(127): login_user(Array)
+#4 {main}
+2023-04-26 15:26:04: Array
+(
+    [0] => 2 Query Error: 
+    [1] => UPDATE tbl_users SET `last_logged_in`='2023-04-26 15:26:04' WHERE 1=1 AND  `user_id`=''
+)
+
+2023-04-26 15:26:04: Unknown column 'user_id' in 'where clause'#0 E:\project\product\bhadagadi\backend\_DATABASE.php(102): mysqli->query('UPDATE tbl_user...')
+#1 E:\project\product\bhadagadi\backend\_DATABASE.php(264): MysqliDB->execute_query('UPDATE tbl_user...')
+#2 E:\project\product\bhadagadi\backend\login_user.php(46): MysqliDB->update('tbl_users', Array, Array)
+#3 E:\project\product\bhadagadi\backend\manage.php(127): login_user(Array)
+#4 {main}
+2023-04-26 15:26:04: Array
+(
+    [0] => 3 Query Error: 
+    [1] => UPDATE tbl_users SET `last_logged_in`='2023-04-26 15:26:04' WHERE 1=1 AND  `user_id`=''
+)
+
+2023-04-26 15:26:04: Unknown column 'user_id' in 'where clause'#0 E:\project\product\bhadagadi\backend\_DATABASE.php(102): mysqli->query('UPDATE tbl_user...')
+#1 E:\project\product\bhadagadi\backend\_DATABASE.php(264): MysqliDB->execute_query('UPDATE tbl_user...')
+#2 E:\project\product\bhadagadi\backend\login_user.php(46): MysqliDB->update('tbl_users', Array, Array)
+#3 E:\project\product\bhadagadi\backend\manage.php(127): login_user(Array)
+#4 {main}
+2023-04-26 15:26:04: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [16]: [Undefined array key "user"]
+2023-04-26 15:26:04: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [16]: [Trying to access array offset on value of type null]
+2023-04-26 15:26:04: audit_log_service > LOGID: 132
+2023-04-26 15:26:06: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => file
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => title
+                    [name] => title
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => date
+                    [name] => date
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [data] => description
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+)
+
+2023-04-26 18:01:45: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => file
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => title
+                    [name] => title
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => date
+                    [name] => date
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [data] => description
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+)
+
+2023-04-26 18:03:05: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => file
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => title
+                    [name] => title
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => date
+                    [name] => date
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [data] => description
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+)
+
+2023-04-26 18:04:09: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => file
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => title
+                    [name] => title
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => date
+                    [name] => date
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [data] => description
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+)
+
+2023-04-26 18:19:09: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => file
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => title
+                    [name] => title
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => date
+                    [name] => date
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [data] => description
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+)
+
+2023-04-26 18:20:55: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => file
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => title
+                    [name] => title
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => date
+                    [name] => date
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [data] => description
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+)
+
+2023-04-26 18:21:07: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [opration] => add_banner
+    [id] => 0
+)
+
+2023-04-26 18:21:07: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 2
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => file
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => title
+                    [name] => title
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => date
+                    [name] => date
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [data] => description
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+)
+
+2023-04-26 18:22:21: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => file
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => title
+                    [name] => title
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => date
+                    [name] => date
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [data] => description
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+)
+
+2023-04-26 18:22:26: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => add_banner
+    [id] => 0
+)
+
+2023-04-26 18:22:26: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\add_banner.php] at line [53]: [Undefined array key "id"]
+2023-04-26 18:22:26: audit_log_service > LOGID: 133
+2023-04-26 18:22:27: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 2
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => file
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => title
+                    [name] => title
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => date
+                    [name] => date
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [data] => description
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+)
+
+2023-04-26 18:26:54: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => file
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => title
+                    [name] => title
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => date
+                    [name] => date
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [data] => description
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+)
+
+2023-04-26 18:31:02: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => file
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => title
+                    [name] => title
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => date
+                    [name] => date
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [data] => description
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+)
+
+2023-04-26 18:31:48: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => file
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => title
+                    [name] => title
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => date
+                    [name] => date
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [data] => description
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+)
+
+2023-04-26 18:32:25: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => file
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => title
+                    [name] => title
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => date
+                    [name] => date
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [data] => description
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+)
+
+2023-04-26 18:32:48: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => file
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => title
+                    [name] => title
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => date
+                    [name] => date
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [data] => description
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+)
+
+2023-04-26 18:33:27: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => file
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => title
+                    [name] => title
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => date
+                    [name] => date
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [data] => description
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+)
+
+2023-04-26 18:34:36: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => file
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => title
+                    [name] => title
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => date
+                    [name] => date
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [data] => description
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+)
+
+2023-04-26 18:36:07: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => file
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => title
+                    [name] => title
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => date
+                    [name] => date
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [data] => description
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+)
+
+2023-04-26 18:46:41: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => file
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => title
+                    [name] => title
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => date
+                    [name] => date
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [data] => description
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+)
+
+2023-04-26 18:48:17: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => file
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => title
+                    [name] => title
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => date
+                    [name] => date
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [data] => description
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+)
+
+2023-04-26 18:48:43: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => file
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => title
+                    [name] => title
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => date
+                    [name] => date
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [data] => description
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+)
+
+2023-04-26 18:49:23: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => login_user
+    [username] => admin
+    [password] => admin
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => 
+    [curr_time] => 26-04-2023
+)
+
+2023-04-26 18:49:23: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\login_user.php] at line [35]: [Undefined array key "is_deleted"]
+2023-04-26 18:49:23: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\login_user.php] at line [46]: [Undefined array key "user_id"]
+2023-04-26 18:49:23: ServiceErrorHandler Error: #[8192] occurred in [E:\project\product\bhadagadi\backend\_DATABASE.php] at line [257]: [mysqli::real_escape_string(): Passing null to parameter #1 ($string) of type string is deprecated]
+2023-04-26 18:49:23: Array
+(
+    [0] => 1 Query Error: 
+    [1] => UPDATE tbl_users SET `last_logged_in`='2023-04-26 18:49:23' WHERE 1=1 AND  `user_id`=''
+)
+
+2023-04-26 18:49:23: Unknown column 'user_id' in 'where clause'#0 E:\project\product\bhadagadi\backend\_DATABASE.php(102): mysqli->query('UPDATE tbl_user...')
+#1 E:\project\product\bhadagadi\backend\_DATABASE.php(264): MysqliDB->execute_query('UPDATE tbl_user...')
+#2 E:\project\product\bhadagadi\backend\login_user.php(46): MysqliDB->update('tbl_users', Array, Array)
+#3 E:\project\product\bhadagadi\backend\manage.php(127): login_user(Array)
+#4 {main}
+2023-04-26 18:49:23: Array
+(
+    [0] => 2 Query Error: 
+    [1] => UPDATE tbl_users SET `last_logged_in`='2023-04-26 18:49:23' WHERE 1=1 AND  `user_id`=''
+)
+
+2023-04-26 18:49:23: Unknown column 'user_id' in 'where clause'#0 E:\project\product\bhadagadi\backend\_DATABASE.php(102): mysqli->query('UPDATE tbl_user...')
+#1 E:\project\product\bhadagadi\backend\_DATABASE.php(264): MysqliDB->execute_query('UPDATE tbl_user...')
+#2 E:\project\product\bhadagadi\backend\login_user.php(46): MysqliDB->update('tbl_users', Array, Array)
+#3 E:\project\product\bhadagadi\backend\manage.php(127): login_user(Array)
+#4 {main}
+2023-04-26 18:49:23: Array
+(
+    [0] => 3 Query Error: 
+    [1] => UPDATE tbl_users SET `last_logged_in`='2023-04-26 18:49:23' WHERE 1=1 AND  `user_id`=''
+)
+
+2023-04-26 18:49:23: Unknown column 'user_id' in 'where clause'#0 E:\project\product\bhadagadi\backend\_DATABASE.php(102): mysqli->query('UPDATE tbl_user...')
+#1 E:\project\product\bhadagadi\backend\_DATABASE.php(264): MysqliDB->execute_query('UPDATE tbl_user...')
+#2 E:\project\product\bhadagadi\backend\login_user.php(46): MysqliDB->update('tbl_users', Array, Array)
+#3 E:\project\product\bhadagadi\backend\manage.php(127): login_user(Array)
+#4 {main}
+2023-04-26 18:49:23: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [16]: [Undefined array key "user"]
+2023-04-26 18:49:23: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [16]: [Trying to access array offset on value of type null]
+2023-04-26 18:49:23: audit_log_service > LOGID: 134
+2023-04-26 18:51:31: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => login_user
+    [username] => admin
+    [password] => admin
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => 
+    [curr_time] => 26-04-2023
+)
+
+2023-04-26 18:51:31: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\login_user.php] at line [35]: [Undefined array key "is_deleted"]
+2023-04-26 18:51:31: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\login_user.php] at line [46]: [Undefined array key "user_id"]
+2023-04-26 18:51:31: ServiceErrorHandler Error: #[8192] occurred in [E:\project\product\bhadagadi\backend\_DATABASE.php] at line [257]: [mysqli::real_escape_string(): Passing null to parameter #1 ($string) of type string is deprecated]
+2023-04-26 18:51:31: Array
+(
+    [0] => 1 Query Error: 
+    [1] => UPDATE tbl_users SET `last_logged_in`='2023-04-26 18:51:31' WHERE 1=1 AND  `user_id`=''
+)
+
+2023-04-26 18:51:31: Unknown column 'user_id' in 'where clause'#0 E:\project\product\bhadagadi\backend\_DATABASE.php(102): mysqli->query('UPDATE tbl_user...')
+#1 E:\project\product\bhadagadi\backend\_DATABASE.php(264): MysqliDB->execute_query('UPDATE tbl_user...')
+#2 E:\project\product\bhadagadi\backend\login_user.php(46): MysqliDB->update('tbl_users', Array, Array)
+#3 E:\project\product\bhadagadi\backend\manage.php(127): login_user(Array)
+#4 {main}
+2023-04-26 18:51:31: Array
+(
+    [0] => 2 Query Error: 
+    [1] => UPDATE tbl_users SET `last_logged_in`='2023-04-26 18:51:31' WHERE 1=1 AND  `user_id`=''
+)
+
+2023-04-26 18:51:31: Unknown column 'user_id' in 'where clause'#0 E:\project\product\bhadagadi\backend\_DATABASE.php(102): mysqli->query('UPDATE tbl_user...')
+#1 E:\project\product\bhadagadi\backend\_DATABASE.php(264): MysqliDB->execute_query('UPDATE tbl_user...')
+#2 E:\project\product\bhadagadi\backend\login_user.php(46): MysqliDB->update('tbl_users', Array, Array)
+#3 E:\project\product\bhadagadi\backend\manage.php(127): login_user(Array)
+#4 {main}
+2023-04-26 18:51:31: Array
+(
+    [0] => 3 Query Error: 
+    [1] => UPDATE tbl_users SET `last_logged_in`='2023-04-26 18:51:31' WHERE 1=1 AND  `user_id`=''
+)
+
+2023-04-26 18:51:31: Unknown column 'user_id' in 'where clause'#0 E:\project\product\bhadagadi\backend\_DATABASE.php(102): mysqli->query('UPDATE tbl_user...')
+#1 E:\project\product\bhadagadi\backend\_DATABASE.php(264): MysqliDB->execute_query('UPDATE tbl_user...')
+#2 E:\project\product\bhadagadi\backend\login_user.php(46): MysqliDB->update('tbl_users', Array, Array)
+#3 E:\project\product\bhadagadi\backend\manage.php(127): login_user(Array)
+#4 {main}
+2023-04-26 18:51:31: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [16]: [Undefined array key "user"]
+2023-04-26 18:51:31: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [16]: [Trying to access array offset on value of type null]
+2023-04-26 18:51:31: audit_log_service > LOGID: 135
+2023-04-26 18:51:42: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => login_user
+    [username] => admin
+    [password] => admin
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => 
+    [curr_time] => 26-04-2023
+)
+
+2023-04-26 18:51:42: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\login_user.php] at line [35]: [Undefined array key "is_deleted"]
+2023-04-26 18:51:42: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\login_user.php] at line [46]: [Undefined array key "user_id"]
+2023-04-26 18:51:42: ServiceErrorHandler Error: #[8192] occurred in [E:\project\product\bhadagadi\backend\_DATABASE.php] at line [257]: [mysqli::real_escape_string(): Passing null to parameter #1 ($string) of type string is deprecated]
+2023-04-26 18:51:42: Array
+(
+    [0] => 1 Query Error: 
+    [1] => UPDATE tbl_users SET `last_logged_in`='2023-04-26 18:51:42' WHERE 1=1 AND  `user_id`=''
+)
+
+2023-04-26 18:51:42: Unknown column 'user_id' in 'where clause'#0 E:\project\product\bhadagadi\backend\_DATABASE.php(102): mysqli->query('UPDATE tbl_user...')
+#1 E:\project\product\bhadagadi\backend\_DATABASE.php(264): MysqliDB->execute_query('UPDATE tbl_user...')
+#2 E:\project\product\bhadagadi\backend\login_user.php(46): MysqliDB->update('tbl_users', Array, Array)
+#3 E:\project\product\bhadagadi\backend\manage.php(127): login_user(Array)
+#4 {main}
+2023-04-26 18:51:42: Array
+(
+    [0] => 2 Query Error: 
+    [1] => UPDATE tbl_users SET `last_logged_in`='2023-04-26 18:51:42' WHERE 1=1 AND  `user_id`=''
+)
+
+2023-04-26 18:51:42: Unknown column 'user_id' in 'where clause'#0 E:\project\product\bhadagadi\backend\_DATABASE.php(102): mysqli->query('UPDATE tbl_user...')
+#1 E:\project\product\bhadagadi\backend\_DATABASE.php(264): MysqliDB->execute_query('UPDATE tbl_user...')
+#2 E:\project\product\bhadagadi\backend\login_user.php(46): MysqliDB->update('tbl_users', Array, Array)
+#3 E:\project\product\bhadagadi\backend\manage.php(127): login_user(Array)
+#4 {main}
+2023-04-26 18:51:42: Array
+(
+    [0] => 3 Query Error: 
+    [1] => UPDATE tbl_users SET `last_logged_in`='2023-04-26 18:51:42' WHERE 1=1 AND  `user_id`=''
+)
+
+2023-04-26 18:51:42: Unknown column 'user_id' in 'where clause'#0 E:\project\product\bhadagadi\backend\_DATABASE.php(102): mysqli->query('UPDATE tbl_user...')
+#1 E:\project\product\bhadagadi\backend\_DATABASE.php(264): MysqliDB->execute_query('UPDATE tbl_user...')
+#2 E:\project\product\bhadagadi\backend\login_user.php(46): MysqliDB->update('tbl_users', Array, Array)
+#3 E:\project\product\bhadagadi\backend\manage.php(127): login_user(Array)
+#4 {main}
+2023-04-26 18:51:42: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [16]: [Undefined array key "user"]
+2023-04-26 18:51:42: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [16]: [Trying to access array offset on value of type null]
+2023-04-26 18:51:42: audit_log_service > LOGID: 136
+2023-04-26 18:53:34: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => login_user
+    [username] => admin
+    [password] => admin
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => 
+    [curr_time] => 26-04-2023
+)
+
+2023-04-26 18:53:34: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\login_user.php] at line [35]: [Undefined array key "is_deleted"]
+2023-04-26 18:53:34: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\login_user.php] at line [46]: [Undefined array key "user_id"]
+2023-04-26 18:53:34: ServiceErrorHandler Error: #[8192] occurred in [E:\project\product\bhadagadi\backend\_DATABASE.php] at line [257]: [mysqli::real_escape_string(): Passing null to parameter #1 ($string) of type string is deprecated]
+2023-04-26 18:53:34: Array
+(
+    [0] => 1 Query Error: 
+    [1] => UPDATE tbl_users SET `last_logged_in`='2023-04-26 18:53:34' WHERE 1=1 AND  `user_id`=''
+)
+
+2023-04-26 18:53:34: Unknown column 'user_id' in 'where clause'#0 E:\project\product\bhadagadi\backend\_DATABASE.php(102): mysqli->query('UPDATE tbl_user...')
+#1 E:\project\product\bhadagadi\backend\_DATABASE.php(264): MysqliDB->execute_query('UPDATE tbl_user...')
+#2 E:\project\product\bhadagadi\backend\login_user.php(46): MysqliDB->update('tbl_users', Array, Array)
+#3 E:\project\product\bhadagadi\backend\manage.php(127): login_user(Array)
+#4 {main}
+2023-04-26 18:53:34: Array
+(
+    [0] => 2 Query Error: 
+    [1] => UPDATE tbl_users SET `last_logged_in`='2023-04-26 18:53:34' WHERE 1=1 AND  `user_id`=''
+)
+
+2023-04-26 18:53:34: Unknown column 'user_id' in 'where clause'#0 E:\project\product\bhadagadi\backend\_DATABASE.php(102): mysqli->query('UPDATE tbl_user...')
+#1 E:\project\product\bhadagadi\backend\_DATABASE.php(264): MysqliDB->execute_query('UPDATE tbl_user...')
+#2 E:\project\product\bhadagadi\backend\login_user.php(46): MysqliDB->update('tbl_users', Array, Array)
+#3 E:\project\product\bhadagadi\backend\manage.php(127): login_user(Array)
+#4 {main}
+2023-04-26 18:53:34: Array
+(
+    [0] => 3 Query Error: 
+    [1] => UPDATE tbl_users SET `last_logged_in`='2023-04-26 18:53:34' WHERE 1=1 AND  `user_id`=''
+)
+
+2023-04-26 18:53:34: Unknown column 'user_id' in 'where clause'#0 E:\project\product\bhadagadi\backend\_DATABASE.php(102): mysqli->query('UPDATE tbl_user...')
+#1 E:\project\product\bhadagadi\backend\_DATABASE.php(264): MysqliDB->execute_query('UPDATE tbl_user...')
+#2 E:\project\product\bhadagadi\backend\login_user.php(46): MysqliDB->update('tbl_users', Array, Array)
+#3 E:\project\product\bhadagadi\backend\manage.php(127): login_user(Array)
+#4 {main}
+2023-04-26 18:53:34: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [16]: [Undefined array key "user"]
+2023-04-26 18:53:34: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [16]: [Trying to access array offset on value of type null]
+2023-04-26 18:53:34: audit_log_service > LOGID: 137
+2023-04-26 18:54:18: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => login_user
+    [username] => admin
+    [password] => admin
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => 
+    [curr_time] => 26-04-2023
+)
+
+2023-04-26 18:54:18: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\login_user.php] at line [35]: [Undefined array key "is_deleted"]
+2023-04-26 18:54:18: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\login_user.php] at line [46]: [Undefined array key "user_id"]
+2023-04-26 18:54:18: ServiceErrorHandler Error: #[8192] occurred in [E:\project\product\bhadagadi\backend\_DATABASE.php] at line [257]: [mysqli::real_escape_string(): Passing null to parameter #1 ($string) of type string is deprecated]
+2023-04-26 18:54:18: Array
+(
+    [0] => 1 Query Error: 
+    [1] => UPDATE tbl_users SET `last_logged_in`='2023-04-26 18:54:18' WHERE 1=1 AND  `user_id`=''
+)
+
+2023-04-26 18:54:18: Unknown column 'user_id' in 'where clause'#0 E:\project\product\bhadagadi\backend\_DATABASE.php(102): mysqli->query('UPDATE tbl_user...')
+#1 E:\project\product\bhadagadi\backend\_DATABASE.php(264): MysqliDB->execute_query('UPDATE tbl_user...')
+#2 E:\project\product\bhadagadi\backend\login_user.php(46): MysqliDB->update('tbl_users', Array, Array)
+#3 E:\project\product\bhadagadi\backend\manage.php(127): login_user(Array)
+#4 {main}
+2023-04-26 18:54:18: Array
+(
+    [0] => 2 Query Error: 
+    [1] => UPDATE tbl_users SET `last_logged_in`='2023-04-26 18:54:18' WHERE 1=1 AND  `user_id`=''
+)
+
+2023-04-26 18:54:18: Unknown column 'user_id' in 'where clause'#0 E:\project\product\bhadagadi\backend\_DATABASE.php(102): mysqli->query('UPDATE tbl_user...')
+#1 E:\project\product\bhadagadi\backend\_DATABASE.php(264): MysqliDB->execute_query('UPDATE tbl_user...')
+#2 E:\project\product\bhadagadi\backend\login_user.php(46): MysqliDB->update('tbl_users', Array, Array)
+#3 E:\project\product\bhadagadi\backend\manage.php(127): login_user(Array)
+#4 {main}
+2023-04-26 18:54:18: Array
+(
+    [0] => 3 Query Error: 
+    [1] => UPDATE tbl_users SET `last_logged_in`='2023-04-26 18:54:18' WHERE 1=1 AND  `user_id`=''
+)
+
+2023-04-26 18:54:18: Unknown column 'user_id' in 'where clause'#0 E:\project\product\bhadagadi\backend\_DATABASE.php(102): mysqli->query('UPDATE tbl_user...')
+#1 E:\project\product\bhadagadi\backend\_DATABASE.php(264): MysqliDB->execute_query('UPDATE tbl_user...')
+#2 E:\project\product\bhadagadi\backend\login_user.php(46): MysqliDB->update('tbl_users', Array, Array)
+#3 E:\project\product\bhadagadi\backend\manage.php(127): login_user(Array)
+#4 {main}
+2023-04-26 18:54:18: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [16]: [Undefined array key "user"]
+2023-04-26 18:54:18: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [16]: [Trying to access array offset on value of type null]
+2023-04-26 18:54:18: audit_log_service > LOGID: 138
+2023-04-26 18:55:00: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => file
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => title
+                    [name] => title
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => date
+                    [name] => date
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [data] => description
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+)
+
+2023-04-26 18:58:13: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => file
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+)
+
+2023-04-26 19:01:16: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => file
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+)
+
+2023-04-26 19:02:26: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => file
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+)
+
+2023-04-26 19:03:16: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => file
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+)
+
+2023-04-26 19:06:42: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => file
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+    [operation] => get_banners
+)
+
+2023-04-26 19:06:42: audit_log_service > LOGID: 139
+2023-04-26 19:10:23: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => file
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+    [operation] => get_banners
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+)
+
+2023-04-26 19:10:23: audit_log_service > LOGID: 140
+2023-04-26 19:11:06: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => file
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+    [operation] => get_banners
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+)
+
+2023-04-26 19:11:06: audit_log_service > LOGID: 141
+2023-04-26 19:11:21: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => file
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+    [operation] => get_banners
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+)
+
+2023-04-26 19:11:21: audit_log_service > LOGID: 142
+2023-04-26 19:11:50: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+    [operation] => get_banners
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+)
+
+2023-04-26 19:11:50: audit_log_service > LOGID: 143
+2023-04-26 19:12:56: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+    [operation] => get_banners
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+)
+
+2023-04-26 19:12:56: audit_log_service > LOGID: 144
+2023-04-26 19:13:04: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => add_banner
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [file] => undefined
+    [id] => 1
+)
+
+2023-04-26 19:13:04: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\add_banner.php] at line [10]: [Undefined array key "file"]
+2023-04-26 19:13:04: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\add_banner.php] at line [10]: [Trying to access array offset on value of type null]
+2023-04-26 19:13:04: ServiceErrorHandler Error: #[8192] occurred in [E:\project\product\bhadagadi\backend\add_banner.php] at line [10]: [basename(): Passing null to parameter #1 ($path) of type string is deprecated]
+2023-04-26 19:13:04: audit_log_service > LOGID: 145
+2023-04-26 19:13:04: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 2
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+    [operation] => get_banners
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+)
+
+2023-04-26 19:13:04: audit_log_service > LOGID: 146
+2023-04-26 19:15:03: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+    [operation] => get_banners
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+)
+
+2023-04-26 19:15:03: audit_log_service > LOGID: 147
+2023-04-26 19:15:05: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => add_banner
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [file] => undefined
+    [id] => 1
+)
+
+2023-04-26 19:15:05: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\add_banner.php] at line [10]: [Undefined array key "file"]
+2023-04-26 19:15:05: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\add_banner.php] at line [10]: [Trying to access array offset on value of type null]
+2023-04-26 19:15:05: ServiceErrorHandler Error: #[8192] occurred in [E:\project\product\bhadagadi\backend\add_banner.php] at line [10]: [basename(): Passing null to parameter #1 ($path) of type string is deprecated]
+2023-04-26 19:15:05: audit_log_service > LOGID: 148
+2023-04-26 19:15:23: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+    [operation] => get_banners
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+)
+
+2023-04-26 19:15:23: audit_log_service > LOGID: 149

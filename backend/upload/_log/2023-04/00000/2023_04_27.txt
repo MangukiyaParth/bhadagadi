@@ -1,0 +1,2992 @@
+
+2023-04-27 14:42:14: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+    [operation] => get_banners
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+)
+
+2023-04-27 14:42:14: audit_log_service > LOGID: 151
+2023-04-27 14:46:52: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+    [operation] => get_banners
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+)
+
+2023-04-27 14:46:52: audit_log_service > LOGID: 152
+2023-04-27 14:46:59: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+    [operation] => get_banners
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+)
+
+2023-04-27 14:46:59: audit_log_service > LOGID: 153
+2023-04-27 14:47:11: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+    [operation] => get_banners
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+)
+
+2023-04-27 14:47:11: audit_log_service > LOGID: 154
+2023-04-27 14:47:26: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+    [operation] => get_banners
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+)
+
+2023-04-27 14:47:26: audit_log_service > LOGID: 155
+2023-04-27 14:50:39: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+    [operation] => get_banners
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+)
+
+2023-04-27 14:50:39: audit_log_service > LOGID: 156
+2023-04-27 14:55:32: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+    [operation] => get_banners
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+)
+
+2023-04-27 14:55:32: audit_log_service > LOGID: 157
+2023-04-27 15:00:10: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+    [operation] => get_banners
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+)
+
+2023-04-27 15:00:10: audit_log_service > LOGID: 158
+2023-04-27 15:01:51: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+    [operation] => get_banners
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+)
+
+2023-04-27 15:01:51: audit_log_service > LOGID: 159
+2023-04-27 15:02:44: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+    [operation] => get_banners
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+)
+
+2023-04-27 15:02:44: audit_log_service > LOGID: 160
+2023-04-27 15:03:32: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+    [operation] => get_banners
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+)
+
+2023-04-27 15:03:32: audit_log_service > LOGID: 161
+2023-04-27 15:03:52: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+    [operation] => get_banners
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+)
+
+2023-04-27 15:03:52: audit_log_service > LOGID: 162
+2023-04-27 15:04:00: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+    [operation] => get_banners
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+)
+
+2023-04-27 15:04:00: audit_log_service > LOGID: 163
+2023-04-27 15:07:24: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => 127.0.0.1
+    [operation] => login_user
+    [cookie_id] => c7JFr4NljavQT4IGmI1Mkw%3D%3D
+)
+
+2023-04-27 15:07:24: ServiceErrorHandler Error: #[8192] occurred in [E:\project\product\bhadagadi\backend\login_user.php] at line [9]: [str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated]
+2023-04-27 15:07:31: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => login_user
+    [username] => admin
+    [password] => admin
+    [version] => web
+    [from] => panel
+    [tz] => +5:30
+    [tzid] => Asia/Calcutta
+    [token] => 
+    [curr_time] => 27-04-2023
+)
+
+2023-04-27 15:07:31: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\login_user.php] at line [35]: [Undefined array key "is_deleted"]
+2023-04-27 15:07:31: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\login_user.php] at line [46]: [Undefined array key "user_id"]
+2023-04-27 15:07:31: ServiceErrorHandler Error: #[8192] occurred in [E:\project\product\bhadagadi\backend\_DATABASE.php] at line [257]: [mysqli::real_escape_string(): Passing null to parameter #1 ($string) of type string is deprecated]
+2023-04-27 15:07:31: Array
+(
+    [0] => 1 Query Error: 
+    [1] => UPDATE tbl_users SET `last_logged_in`='2023-04-27 15:07:31' WHERE 1=1 AND  `user_id`=''
+)
+
+2023-04-27 15:07:31: Unknown column 'user_id' in 'where clause'#0 E:\project\product\bhadagadi\backend\_DATABASE.php(102): mysqli->query('UPDATE tbl_user...')
+#1 E:\project\product\bhadagadi\backend\_DATABASE.php(264): MysqliDB->execute_query('UPDATE tbl_user...')
+#2 E:\project\product\bhadagadi\backend\login_user.php(46): MysqliDB->update('tbl_users', Array, Array)
+#3 E:\project\product\bhadagadi\backend\manage.php(127): login_user(Array)
+#4 {main}
+2023-04-27 15:07:31: Array
+(
+    [0] => 2 Query Error: 
+    [1] => UPDATE tbl_users SET `last_logged_in`='2023-04-27 15:07:31' WHERE 1=1 AND  `user_id`=''
+)
+
+2023-04-27 15:07:31: Unknown column 'user_id' in 'where clause'#0 E:\project\product\bhadagadi\backend\_DATABASE.php(102): mysqli->query('UPDATE tbl_user...')
+#1 E:\project\product\bhadagadi\backend\_DATABASE.php(264): MysqliDB->execute_query('UPDATE tbl_user...')
+#2 E:\project\product\bhadagadi\backend\login_user.php(46): MysqliDB->update('tbl_users', Array, Array)
+#3 E:\project\product\bhadagadi\backend\manage.php(127): login_user(Array)
+#4 {main}
+2023-04-27 15:07:31: Array
+(
+    [0] => 3 Query Error: 
+    [1] => UPDATE tbl_users SET `last_logged_in`='2023-04-27 15:07:31' WHERE 1=1 AND  `user_id`=''
+)
+
+2023-04-27 15:07:31: Unknown column 'user_id' in 'where clause'#0 E:\project\product\bhadagadi\backend\_DATABASE.php(102): mysqli->query('UPDATE tbl_user...')
+#1 E:\project\product\bhadagadi\backend\_DATABASE.php(264): MysqliDB->execute_query('UPDATE tbl_user...')
+#2 E:\project\product\bhadagadi\backend\login_user.php(46): MysqliDB->update('tbl_users', Array, Array)
+#3 E:\project\product\bhadagadi\backend\manage.php(127): login_user(Array)
+#4 {main}
+2023-04-27 15:07:31: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [16]: [Undefined array key "user"]
+2023-04-27 15:07:31: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [16]: [Trying to access array offset on value of type null]
+2023-04-27 15:07:31: audit_log_service > LOGID: 164
+2023-04-27 16:48:36: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+    [operation] => get_banners
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+)
+
+2023-04-27 16:48:36: audit_log_service > LOGID: 165
+2023-04-27 16:48:42: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+    [operation] => get_banners
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+)
+
+2023-04-27 16:48:42: audit_log_service > LOGID: 167
+2023-04-27 16:50:11: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+    [operation] => get_banners
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+)
+
+2023-04-27 16:50:11: audit_log_service > LOGID: 169
+2023-04-27 16:51:16: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+    [operation] => get_banners
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+)
+
+2023-04-27 16:51:16: audit_log_service > LOGID: 172
+2023-04-27 16:51:24: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+    [operation] => get_banners
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+)
+
+2023-04-27 16:51:24: audit_log_service > LOGID: 174
+2023-04-27 16:51:40: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+    [operation] => get_banners
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+)
+
+2023-04-27 16:51:40: audit_log_service > LOGID: 175
+2023-04-27 16:51:49: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+    [operation] => get_banners
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+)
+
+2023-04-27 16:51:49: audit_log_service > LOGID: 242
+2023-04-27 16:53:14: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+    [operation] => get_banners
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+)
+
+2023-04-27 16:53:15: audit_log_service > LOGID: 243
+2023-04-27 16:57:54: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => add_banner
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [file] => undefined
+    [id] => 1
+)
+
+2023-04-27 16:57:54: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\add_banner.php] at line [10]: [Undefined array key "file"]
+2023-04-27 16:57:54: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\add_banner.php] at line [10]: [Trying to access array offset on value of type null]
+2023-04-27 16:57:54: ServiceErrorHandler Error: #[8192] occurred in [E:\project\product\bhadagadi\backend\add_banner.php] at line [10]: [basename(): Passing null to parameter #1 ($path) of type string is deprecated]
+2023-04-27 16:57:54: audit_log_service > LOGID: 246
+2023-04-27 16:58:09: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => add_banner
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [id] => 1
+)
+
+2023-04-27 16:58:09: audit_log_service > LOGID: 247
+2023-04-27 17:01:31: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => add_banner
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [id] => 1
+)
+
+2023-04-27 17:01:31: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 17:01:31: audit_log_service > LOGID: 248
+2023-04-27 17:01:31: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 2
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+    [operation] => get_banners
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+)
+
+2023-04-27 17:01:31: audit_log_service > LOGID: 249
+2023-04-27 17:01:38: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => add_banner
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [file] => undefined
+    [id] => 1
+)
+
+2023-04-27 17:01:38: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\add_banner.php] at line [10]: [Undefined array key "file"]
+2023-04-27 17:01:38: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\add_banner.php] at line [10]: [Trying to access array offset on value of type null]
+2023-04-27 17:01:38: ServiceErrorHandler Error: #[8192] occurred in [E:\project\product\bhadagadi\backend\add_banner.php] at line [10]: [basename(): Passing null to parameter #1 ($path) of type string is deprecated]
+2023-04-27 17:01:38: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 17:01:38: audit_log_service > LOGID: 250
+2023-04-27 17:01:46: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => add_banner
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [id] => 1
+)
+
+2023-04-27 17:01:46: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 17:01:46: audit_log_service > LOGID: 251
+2023-04-27 17:01:46: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 3
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+    [operation] => get_banners
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+)
+
+2023-04-27 17:01:46: audit_log_service > LOGID: 252
+2023-04-27 17:12:09: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+    [operation] => get_banners
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+)
+
+2023-04-27 17:12:09: audit_log_service > LOGID: 253
+2023-04-27 17:12:20: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => add_banner
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [id] => 1
+)
+
+2023-04-27 17:12:20: Service Error: Undefined constant "API_SERVICE_URL"
+[ 0 ] #0 E:\project\product\bhadagadi\backend\manage.php(127): add_banner(Array)
+#1 {main}
+2023-04-27 17:14:15: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => add_banner
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [id] => 1
+)
+
+2023-04-27 17:14:15: Service Error: Undefined constant "API_SERVICE_URL"
+[ 0 ] #0 E:\project\product\bhadagadi\backend\manage.php(127): add_banner(Array)
+#1 {main}
+2023-04-27 17:14:51: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+    [operation] => get_banners
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+)
+
+2023-04-27 17:14:51: audit_log_service > LOGID: 254
+2023-04-27 17:15:21: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+    [operation] => get_banners
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+)
+
+2023-04-27 17:15:21: audit_log_service > LOGID: 255
+2023-04-27 17:15:27: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => add_banner
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [id] => 1
+)
+
+2023-04-27 17:15:27: Service Error: Undefined constant "API_SERVICE_URL"
+[ 0 ] #0 E:\project\product\bhadagadi\backend\manage.php(127): add_banner(Array)
+#1 {main}
+2023-04-27 17:15:49: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => add_banner
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [id] => 1
+)
+
+2023-04-27 17:15:49: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 17:15:49: audit_log_service > LOGID: 256
+2023-04-27 17:15:49: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 2
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+    [operation] => get_banners
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+)
+
+2023-04-27 17:15:49: audit_log_service > LOGID: 257
+2023-04-27 17:16:45: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+    [operation] => get_banners
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+)
+
+2023-04-27 17:16:45: audit_log_service > LOGID: 258
+2023-04-27 17:16:57: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => add_banner
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [id] => 1
+)
+
+2023-04-27 17:16:57: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\add_banner.php] at line [51]: [unlink(E:\project\product\bhadagadi\backendupload/images/banners/Capture0011682595949.png): No such file or directory]
+2023-04-27 17:16:57: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 17:16:57: audit_log_service > LOGID: 259
+2023-04-27 17:16:57: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 2
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+    [operation] => get_banners
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+)
+
+2023-04-27 17:16:57: audit_log_service > LOGID: 260
+2023-04-27 17:17:26: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => add_banner
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [id] => 1
+)
+
+2023-04-27 17:17:26: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\add_banner.php] at line [51]: [unlink(E:\project\product\bhadagadi\backendupload/images/banners/10x-featured-social-media-image-size.png): No such file or directory]
+2023-04-27 17:17:26: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 17:17:26: audit_log_service > LOGID: 261
+2023-04-27 17:17:26: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 3
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+    [operation] => get_banners
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+)
+
+2023-04-27 17:17:26: audit_log_service > LOGID: 262
+2023-04-27 17:18:48: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => add_banner
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [id] => 1
+)
+
+2023-04-27 17:18:48: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 17:18:48: audit_log_service > LOGID: 263
+2023-04-27 17:18:48: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 4
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+    [operation] => get_banners
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+)
+
+2023-04-27 17:18:48: audit_log_service > LOGID: 264
+2023-04-27 17:25:40: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+    [operation] => get_banners
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+)
+
+2023-04-27 17:25:40: audit_log_service > LOGID: 266
+2023-04-27 17:25:46: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 2
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+    [operation] => get_banners
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+)
+
+2023-04-27 17:25:46: audit_log_service > LOGID: 268
+2023-04-27 17:26:17: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => add_banner
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+    [id] => 0
+)
+
+2023-04-27 17:26:17: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\log_manage.php] at line [25]: [Undefined array key "success"]
+2023-04-27 17:26:17: audit_log_service > LOGID: 269
+2023-04-27 17:26:17: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 3
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+    [operation] => get_banners
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+)
+
+2023-04-27 17:26:17: audit_log_service > LOGID: 270
+2023-04-27 17:29:17: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+    [operation] => get_banners
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+)
+
+2023-04-27 17:29:17: audit_log_service > LOGID: 273
+2023-04-27 17:30:42: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [draw] => 1
+    [columns] => Array
+        (
+            [0] => Array
+                (
+                    [data] => file
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [data] => is_active
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [data] => id
+                    [name] => 
+                    [searchable] => true
+                    [orderable] => true
+                    [search] => Array
+                        (
+                            [value] => 
+                            [regex] => false
+                        )
+
+                )
+
+        )
+
+    [order] => Array
+        (
+            [0] => Array
+                (
+                    [column] => 0
+                    [dir] => asc
+                )
+
+        )
+
+    [start] => 0
+    [length] => 10
+    [search] => Array
+        (
+            [value] => 
+            [regex] => false
+        )
+
+    [operation] => get_banners
+    [token] => b696f212abf683ad4f33430ab4f61b7e_c4ca4238a0b923820dcc509a6f75849b
+)
+
+2023-04-27 17:30:42: audit_log_service > LOGID: 276
+2023-04-27 18:06:24: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_notification_settings
+    [token] => c7e4f6449615d89955d6272cdc3d5576_c81e728d9d4c2f636f067f89cc14862c
+    [informations] => 1
+    [one_way_trip] => 1
+    [round_trip] => 1
+    [sedan] => 1
+    [suv] => 1
+    [hatchback] => 1
+    [traveler_tempo] => 1
+    [bus] => 1
+    [mini_bus] => 1
+)
+
+2023-04-27 18:06:24: audit_log_service > LOGID: 277
+2023-04-27 18:06:38: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_notification_settings
+    [token] => c7e4f6449615d89955d6272cdc3d5576_c81e728d9d4c2f636f067f89cc14862c
+    [informations] => 1
+    [one_way_trip] => 1
+    [round_trip] => 0
+    [sedan] => 1
+    [suv] => 1
+    [hatchback] => 1
+    [traveler_tempo] => 1
+    [bus] => 1
+    [mini_bus] => 1
+)
+
+2023-04-27 18:06:38: audit_log_service > LOGID: 278
+2023-04-27 18:10:21: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_notification_settings
+    [token] => c7e4f6449615d89955d6272cdc3d5576_c81e728d9d4c2f636f067f89cc14862c
+    [informations] => 1
+    [one_way_trip] => 1
+    [round_trip] => 0
+    [sedan] => 1
+    [suv] => 1
+    [hatchback] => 1
+    [traveler_tempo] => 1
+    [bus] => 1
+    [mini_bus] => 1
+)
+
+2023-04-27 18:10:21: audit_log_service > LOGID: 279
+2023-04-27 18:10:43: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_notification_settings
+    [token] => c7e4f6449615d89955d6272cdc3d5576_c81e728d9d4c2f636f067f89cc14862c
+    [informations] => 1
+    [one_way_trip] => 1
+    [round_trip] => 0
+    [sedan] => 1
+    [suv] => 1
+    [hatchback] => 1
+    [traveler_tempo] => 1
+    [bus] => 1
+    [mini_bus] => 1
+)
+
+2023-04-27 18:10:43: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\update_notification_settings.php] at line [8]: [Undefined array key "id"]
+2023-04-27 18:10:43: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1#0 E:\project\product\bhadagadi\backend\_DATABASE.php(37): mysqli->prepare('SELECT * FROM t...')
+#1 E:\project\product\bhadagadi\backend\update_notification_settings.php(32): MysqliDB->execute('SELECT * FROM t...')
+#2 E:\project\product\bhadagadi\backend\manage.php(127): update_notification_settings(Array)
+#3 {main}
+2023-04-27 18:10:43: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1#0 E:\project\product\bhadagadi\backend\_DATABASE.php(37): mysqli->prepare('SELECT * FROM t...')
+#1 E:\project\product\bhadagadi\backend\update_notification_settings.php(65): MysqliDB->execute('SELECT * FROM t...')
+#2 E:\project\product\bhadagadi\backend\manage.php(127): update_notification_settings(Array)
+#3 {main}
+2023-04-27 18:10:43: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\update_notification_settings.php] at line [68]: [Undefined array key 0]
+2023-04-27 18:10:43: audit_log_service > LOGID: 280
+2023-04-27 18:11:08: Array
+(
+    [QUERY_STRING] => 
+    [IP_ADDRESS] => ::1
+    [operation] => update_notification_settings
+    [token] => c7e4f6449615d89955d6272cdc3d5576_c81e728d9d4c2f636f067f89cc14862c
+    [informations] => 1
+    [one_way_trip] => 1
+    [round_trip] => 0
+    [sedan] => 1
+    [suv] => 1
+    [hatchback] => 1
+    [traveler_tempo] => 1
+    [bus] => 1
+    [mini_bus] => 1
+)
+
+2023-04-27 18:11:08: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\update_notification_settings.php] at line [8]: [Undefined array key "id"]
+2023-04-27 18:11:08: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1#0 E:\project\product\bhadagadi\backend\_DATABASE.php(37): mysqli->prepare('SELECT * FROM t...')
+#1 E:\project\product\bhadagadi\backend\update_notification_settings.php(32): MysqliDB->execute('SELECT * FROM t...')
+#2 E:\project\product\bhadagadi\backend\manage.php(127): update_notification_settings(Array)
+#3 {main}
+2023-04-27 18:11:08: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1#0 E:\project\product\bhadagadi\backend\_DATABASE.php(37): mysqli->prepare('SELECT * FROM t...')
+#1 E:\project\product\bhadagadi\backend\update_notification_settings.php(65): MysqliDB->execute('SELECT * FROM t...')
+#2 E:\project\product\bhadagadi\backend\manage.php(127): update_notification_settings(Array)
+#3 {main}
+2023-04-27 18:11:08: ServiceErrorHandler Error: #[2] occurred in [E:\project\product\bhadagadi\backend\update_notification_settings.php] at line [68]: [Undefined array key 0]
+2023-04-27 18:11:08: audit_log_service > LOGID: 281

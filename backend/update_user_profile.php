@@ -3,7 +3,7 @@
 function update_user_profile()
 {
 	global $outputjson, $gh, $db, $const,$tz_name, $tz_offset, $md5_user_id;
-	$outputjson['success'] = 0;
+	$outputjson['status'] = 0;
 
 	$token = $gh->read("token");
 	$name = $gh->read("name");
@@ -31,11 +31,10 @@ function update_user_profile()
 		"pin_code"=>$pin_code,
 	);
 	$result = $db->update("tbl_users", $tableData, array("MD5(id)"=>$md5_user_id));
-	$query_user = "SELECT usr.* FROM tbl_users as usr WHERE MD5(id) = '$md5_user_id'";
-	$rows = $db->execute($query_user);
+	
 	$outputjson['message'] = "data updated successfully";
 	$outputjson['status'] = 1;
-	$outputjson['data'] = $rows[0];
+	$outputjson['data'] = getUsersDetails($md5_user_id, true);;
 
 }
 
