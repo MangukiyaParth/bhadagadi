@@ -40,7 +40,11 @@ function add_user()
 	$state_text = $get_names['state_text'];
 
 	$city_preferance = [$city_id];
-	$city_preferance_name = [$city_text];
+	$new_city = array(
+		"id"=>$city_id,
+		"name"=>$city_text
+	);
+	$city_preferance_name = array_push([], $new_city);;
 
 	$tableData = array(
 		"role_id"=>$role_id,

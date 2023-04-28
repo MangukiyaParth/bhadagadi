@@ -189,7 +189,7 @@
 		// echo $value."+++";
 		if($value)
 		{
-			$value = is_array($value) ?	array_map('stripslashes_recursively', $value) : (isJson($value) ? $value : stripslashes($value));
+			$value = is_array($value) ?	array_map('stripslashes_recursively', $value) : (($value instanceof stdClass) ? $value : (isJson($value) ? $value : stripslashes($value)));
 		}
 		return $value;
 	}
@@ -202,7 +202,7 @@
 	}
 
 	function isJson($string) {
-		if($string && strpos($string, "[") === 0){
+		if($string && is_string($string) && strpos($string, "[") === 0){
 			json_decode($string);
 			return (json_last_error() == JSON_ERROR_NONE);
 		}

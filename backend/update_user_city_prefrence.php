@@ -30,12 +30,16 @@ function update_user_city_prefrence()
 
 	if(!in_array($city, $city_preferance, true)){
 		array_push($city_preferance, $city);
-		array_push($city_preferance_name, $cityData['city']);
+		$new_city = array(
+			"id"=>$city,
+			"name"=>$cityData['city']
+		);
+		array_push($city_preferance_name, $new_city);
     }
 	else if($is_delete)
 	{
 		$city_preferance = array_values(array_filter($city_preferance, fn ($m) => $m != $city));
-		$city_preferance_name = array_values(array_filter($city_preferance_name, fn ($m) => $m != $cityData['city']));
+		$city_preferance_name = array_values(array_filter($city_preferance_name, fn ($m) => $m->id != $city ));
 	}
 	$tableData = array(
 		"city_preferance"=> json_encode($city_preferance),
