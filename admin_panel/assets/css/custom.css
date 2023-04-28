@@ -122,23 +122,26 @@ table.dataTable>thead>tr>td:not(.sorting_disabled) {
   border-radius: 12px;
   position: relative;
   margin: auto;
+  box-shadow: inset 1px 1px 5px 1px #7f7e7e;
 }
 
 .switchToggle label:after {
   content: '';
   position: absolute;
   top: 2px;
-  left: 2px;
+  left: 4px;
   width: 26px;
   height: 26px;
   background: #fff;
   border-radius: 10px;
   transition: 0.3s;
+  box-shadow: 0px 0px 5px 1px #7f7e7e;
 }
 
 .switchToggle input:checked+label,
 .switchToggle input:checked+input+label {
   background: #727cf5;
+  box-shadow: inset 1px 1px 5px 1px #2431d3;
 }
 
 .switchToggle input+label:before,
@@ -153,6 +156,7 @@ table.dataTable>thead>tr>td:not(.sorting_disabled) {
   transition: 0.3s;
   text-indent: 0;
   color: #fff;
+  text-shadow: 1px 1px 1px #7f7e7e;
 }
 
 .switchToggle input:checked+label:before,
@@ -167,12 +171,14 @@ table.dataTable>thead>tr>td:not(.sorting_disabled) {
   transition: 0.3s;
   text-indent: 0;
   color: #fff;
+  text-shadow: 1px 1px 1px #2431d3;
 }
 
 .switchToggle input:checked+label:after,
 .switchToggle input:checked+input+label:after {
-  left: calc(100% - 2px);
+  left: calc(100% - 4px);
   transform: translateX(-100%);
+  box-shadow: 0px 0px 5px 1px #2431d3;
 }
 
 .switchToggle label:active:after {
