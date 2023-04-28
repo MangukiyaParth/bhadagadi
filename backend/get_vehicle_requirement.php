@@ -32,6 +32,7 @@ function get_vehicle_requirement()
 		INNER JOIN tbl_users user ON user.id = vr.created_by 
 		LEFT JOIN tbl_users au ON au.id = vr.assigned_id 
 		$where 
+		ORDER BY vr.id DESC
 		LIMIT $start, $length";
     $requirement_rows = $db->execute($requirement_query);
     
