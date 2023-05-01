@@ -51,7 +51,7 @@ function update_user_city_prefrence()
 	
 	$outputjson['message'] = "data updated successfully";
 	$outputjson['status'] = 1;
-	$outputjson['data'] = $userData;
+	$outputjson['data'] = getUsersDetails($md5_user_id, true);
 
 }
 
