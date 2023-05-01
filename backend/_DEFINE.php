@@ -52,5 +52,5 @@ define("LOG_MODE", "1");
 // Default: false,  Set to true when releasing website changes so no one uses it.
 define("WEBSITE_UNDER_MAINTENANCE", false);
 
-define("FCM_KEY", "");
+define("FCM_KEY", "AAAATLkI3Ww:APA91bEzSbzel-X_Ed_Jw9K_rHgixu9GUy8ryeZiGTRUo5Kn7jSIJ5aHauM76qKIHVbI6Ry4P5bGpGdOSF4h_ErwtVtRgVdxJjRi11EXXjrMT86GjYCBM67kDayWO8k18o-iugnaXdWX");
 ?>
