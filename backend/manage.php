@@ -15,8 +15,8 @@
 	$db = new MysqliDB(db_host, db_user, db_pass, db_name);
 	$gh = new SUPPORT();
 
-	$login_not_require_operation = array("login_user","add_user","get_state","get_city","get_all_basics","get_car_type","get_plans");
-	$plan_not_require_operation = array("login_user","add_user","get_state","get_city","get_all_basics","get_car_type","get_plans","add_user_plan");
+	$login_not_require_operation = array("login_user","add_user","get_state","get_city","get_all_basics","get_car_type","get_plans","user_verification");
+	$plan_not_require_operation = array("login_user","add_user","get_state","get_city","get_all_basics","get_car_type","get_plans","user_verification","add_user_plan");
 
 	$operation = $gh->read("operation","");
 	$token = $gh->read("token","");

@@ -64,6 +64,23 @@ function add_vehicle_requirement()
 	);
 	$result = $db->insert("tbl_vehicle_requirement", $tableData);
     if ($result) {
+
+		/* Send Notification */
+		// $query_get_users = `SELECT GROUP_CONCAT(DISTINCT fcm_token) AS tokens FROM tbl_users 
+		// 	WHERE 
+		// 	account_status = 1 
+		// 	AND
+		// 	(
+		// 		WHERE FIND_IN_SET(".$from.", (REPLACE(REPLACE(REPLACE(city_preferance,'","',','),'["',''),'"]','')) ) 
+		// 		OR 
+		// 		FIND_IN_SET(".$to.", (REPLACE(REPLACE(REPLACE(city_preferance,'","',','),'["',''),'"]','')) )
+		// 	)
+		// 	AND
+		// 	id IN (SELECT user_id FROM tbl_users_plan WHERE NOW() BETWEEN start_date AND end_date)`;
+		// $get_users_rows = $db->execute($query_get_users);
+		// $device_token_array = explode(',',$get_users_rows[0]['tokens']);
+		// SendAndroidPushNotification($device_token_array, $msg_title, $msg_body, $extra_args = array());
+		/*********************/
 		$outputjson['message'] = "Requirement added successfully";
 		$outputjson['status'] = 1;
 		$outputjson['result'] = $result;

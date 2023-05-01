@@ -8,6 +8,7 @@ function login_user()
 	$username = $gh->read("username");
 	$username = addslashes(str_replace('&apos;', "'", $username));
 	$password = $gh->read("password");
+	$fcm_token = $gh->read("fcm_token");
     $dateNow = date('Y-m-d H:i:s');
 
 	if(empty($username)){
@@ -45,7 +46,7 @@ function login_user()
         unset($user["password"]);
         
 		if($userPassword == $password || $user_id > 0) {
-            if($user['is_deleted'] == 1){
+            if($user['account_status'] == 4){
                 $outputjson['message'] = "Your account is susspended, please contact admin";
                 return;
             }

@@ -51,4 +51,6 @@ define("LOG_MODE", "1");
 
 // Default: false,  Set to true when releasing website changes so no one uses it.
 define("WEBSITE_UNDER_MAINTENANCE", false);
+
+define("FCM_KEY", "");
 ?>

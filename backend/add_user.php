@@ -15,6 +15,7 @@ function add_user()
 	$state_id = $gh->read("state_id");
 	$city_id = $gh->read("city_id");
 	$pin_code = $gh->read("pin_code");
+	$fcm_token = $gh->read("fcm_token");
     $dateNow = date('Y-m-d H:i:s');
 
 	if(empty($name) || empty($phone) || empty($password) || empty($business_name) || empty($email) || empty($state_id) || empty($city_id) || empty($pin_code)){
@@ -45,7 +46,7 @@ function add_user()
 		"id"=>$city_id,
 		"name"=>$city_text
 	);
-	array_push($city_preferance_name, $new_city);;
+	array_push($city_preferance_name, $new_city);
 
 	$tableData = array(
 		"role_id"=>$role_id,
@@ -63,6 +64,7 @@ function add_user()
 		"city_preferance"=> json_encode($city_preferance),
 		"city_preferance_name"=> json_encode($city_preferance_name),
 		"pin_code"=>$pin_code,
+		"fcm_token"=>$fcm_token,
 	);
 	$result = $db->insert("tbl_users", $tableData);
 	$token = md5(date('YmdHis')).'_'.md5($result);

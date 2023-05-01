@@ -416,4 +416,73 @@ class SUPPORT
 		$str = str_replace("â€", "\"", $str); // right double smart-quotation mark
 		return $str;
 	}
+
+	public function SendAndroidPushNotification($device_token_array, $msg_title, $msg_body, $extra_args = array())
+	{
+		global $db;
+		$this->Log(" ========= CALL SendAndroidPushNotification =============== ");
+		$msg_body = strip_tags(str_replace("<br>", "\n", $msg_body));
+		$fields = array(
+			'registration_ids' => $device_token_array,
+			'data' => array(
+				'message' => $msg_body,
+				'title' => $msg_title,
+				'extra' => $extra_args,
+			),
+		);
+		
+		$headers = array
+		(
+			'Authorization: key=' . FCM_KEY,
+			'Content-Type: application/json',
+		);
+
+		$curl = curl_init();
+		curl_setopt($curl, CURLOPT_URL, 'https://fcm.googleapis.com/fcm/send');
+		curl_setopt($curl, CURLOPT_POST, true);
+		curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
+		curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+		curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
+		curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
+		curl_setopt($curl, CURLOPT_POSTFIELDS, json_encode($fields));
+
+		$response = curl_exec($curl);
+		$err = curl_error($curl);
+
+		curl_close($curl);
+
+		if ($err) {
+			$this->Log("***** CURL ERROR ***** ");
+			$this->Log($err);
+		} else {
+			$this->Log("Push Android Rsponse: " . print_r($response, true));
+			if ($response && $response != null && strlen($response) > 0) {
+				$json = (array)json_decode($response);
+				if ($json != null) {
+					if ($json["success"] == "1") {
+					}
+					else
+					{
+						$token_to_delete = array();
+						if(isset($json['results']) && $json['results'] != null && count($json['results']) > 0) {
+							foreach ($json['results'] as $index => $result) {
+								if(isset($result) && isset($result->error)){
+									$token_to_delete[] = $device_token_array[$index];
+								}
+							}
+						}
+
+						if(count($token_to_delete) > 0) {
+							$token_to_delete_string = "'".implode("','", $token_to_delete)."'";
+							$query = "delete from tbl_user_device_tokens where device_token in ($token_to_delete_string)";
+							$this->Log($query);
+							$res = $db->execute_query($query);
+						}
+					}
+				}
+			} else {
+				$this->Log("Push sent to android: " . $msg_title . " " . $msg_body);
+			}
+		}
+	}
 }
