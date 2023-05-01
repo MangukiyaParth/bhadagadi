@@ -35,10 +35,12 @@ $include_javscript_library_before_custom_script_at_bottom .= "<script>
     .img-Div {
         width: 100%;
         height: 250px;
-        box-shadow: 4px 4px 12px 2px #CDCDCD;
         border-radius: 10px;
     }
-    .img-Div:hover {
+    .img-Div:not(.sample-img) {
+        box-shadow: 4px 4px 12px 2px #CDCDCD;
+    }
+    .img-Div:not(.sample-img):hover {
         box-shadow: 4px 4px 12px 2px #9A9A9A;
         border-radius: 10px;
     }
@@ -149,24 +151,27 @@ $include_javscript_library_before_custom_script_at_bottom .= "<script>
                                 <option value="4">Suspended</option>
                             </select>
                         </div>
+                        <div class="col-sm-3">
+                            <button type="button" class="btn btn-primary" id="change_status">Apply</button>
+                        </div>
                     </div>
                 </form>
                 <div class="row">
                     <div class="col-sm-3">
                         <div class="doc-title text-center">DL Front</div>
-                        <div class="sample-img img-Div" id="dl_front"></div>
+                        <div class="img-Div" id="dl_front"></div>
                     </div>
                     <div class="col-sm-3">
                         <div class="doc-title text-center">DL Back</div>
-                        <div class="sample-img img-Div" id="dl_back"></div>
+                        <div class="img-Div" id="dl_back"></div>
                     </div>
                     <div class="col-sm-3">
                         <div class="doc-title text-center">Adhar Front</div>
-                        <div class="sample-img img-Div" id="adhar_front"></div>
+                        <div class="img-Div" id="adhar_front"></div>
                     </div>
                     <div class="col-sm-3">
                         <div class="doc-title text-center">Adhar Back</div>
-                        <div class="sample-img img-Div" id="adhar_back"></div>
+                        <div class="img-Div" id="adhar_back"></div>
                     </div>
                 </div>
             </div>
@@ -175,7 +180,7 @@ $include_javscript_library_before_custom_script_at_bottom .= "<script>
 </div><!-- /.modal -->
 
 <div class="modal fade" id="documentPrevieModal" tabindex="-1" role="dialog" aria-labelledby="scrollableModalTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-fullscreen" role="document">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-full-width" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="scrollableModalTitle">Documents</h5>

@@ -1,6 +1,6 @@
 function login_user(data) {
 
-    if (data && data != null && data.success == true) {
+    if (data && data != null && data.status == true) {
         $("#div_login_status").show().html("<h3>Logging you in!</h3>");
         current_user = data.data;
         addToLocalStorage(GLOBAL_STORAGE_KEY, JSON.stringify(current_user));
@@ -8,7 +8,7 @@ function login_user(data) {
         hideLoading();
         return false;
     }
-    else if (data && data != null && data.success == false) {
+    else if (data && data != null && data.status == false) {
         hideLoading();
         showError(data.message);
         $("#div_login_status").html("").hide();

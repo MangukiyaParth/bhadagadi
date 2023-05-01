@@ -21,11 +21,24 @@ function login_user()
 
 	$user_id = 0;
 	$where = "( usr.username ='" . $username . "' ) ";
-    $query_user = "SELECT usr.* FROM tbl_users as usr WHERE " . $where."";
+    $query_user = "SELECT usr.*,
+		(SELECT COUNT(id) FROM `tbl_users_plan` WHERE user_id = usr.id AND STR_TO_DATE('$dateNow','%Y-%m-%d %H:%i:%s') BETWEEN STR_TO_DATE(start_date,'%Y-%m-%d %H:%i:%s') AND STR_TO_DATE(end_date,'%Y-%m-%d %H:%i:%s') LIMIT 1) AS has_active_plan
+		FROM tbl_users as usr WHERE " . $where."";
     $rows = $db->execute($query_user);
     
     if ($rows != null && is_array($rows) && count($rows) > 0) {
 		$user = $rows[0];
+
+		if($user['has_active_plan'] == 0){
+			$error = "Plan is not active for use Id: ".$user['id'];
+			$gh->Log($error);
+	
+			$outputjson['message'] = "Sorry! You don't have any active plan, Please purchase any plan to continue this service.";
+			$outputjson['status'] = -1;
+			$outputjson['data'] = [];
+			return;
+		}
+
         $userPassword = $user['password'];
         
         // remove password from user object

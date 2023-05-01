@@ -87,34 +87,46 @@ function view_documents(index) {
     if (TBLDATA.length > 0) {
         var currData = TBLDATA[index];
         PRIMARY_ID = currData.id;
-        $("#dl_front").html("<img class='zoom-img' src='" + WEB_API_FOLDER + currData.dl_front + "' />").removeClass('sample-img');
-        $("#dl_back").html("<img class='zoom-img' src='" + WEB_API_FOLDER + currData.dl_back + "' />").removeClass('sample-img');
-        $("#adhar_front").html("<img class='zoom-img' src='" + WEB_API_FOLDER + currData.adhar_front + "' />").removeClass('sample-img');
-        $("#adhar_back").html("<img class='zoom-img' src='" + WEB_API_FOLDER + currData.adhar_back + "' />").removeClass('sample-img');
+        $("#dl_front").html('').addClass('sample-img');
+        $("#dl_back").html('').addClass('sample-img');
+        $("#adhar_front").html('').addClass('sample-img');
+        $("#adhar_back").html('').addClass('sample-img');
+        if (currData.dl_front) {
+            $("#dl_front").html("<img class='zoom-img' src='" + WEB_API_FOLDER + currData.dl_front.replace("/tmp/", "/tmp_thumb/") + "' />").removeClass('sample-img');
+        }
+        if (currData.dl_back) {
+            $("#dl_back").html("<img class='zoom-img' src='" + WEB_API_FOLDER + currData.dl_back.replace("/tmp/", "/tmp_thumb/") + "' />").removeClass('sample-img');
+        }
+        if (currData.adhar_front) {
+            $("#adhar_front").html("<img class='zoom-img' src='" + WEB_API_FOLDER + currData.adhar_front.replace("/tmp/", "/tmp_thumb/") + "' />").removeClass('sample-img');
+        }
+        if (currData.adhar_back) {
+            $("#adhar_back").html("<img class='zoom-img' src='" + WEB_API_FOLDER + currData.adhar_back.replace("/tmp/", "/tmp_thumb/") + "' />").removeClass('sample-img');
+        }
+        $("#documentModal #user_status").val(currData.account_status);
         $("#documentModal").modal('show');
 
         $(".zoom-img").on('click', function () {
-            $("#documentPrevieModal img").attr('src', $(this).attr('src'))
+            $("#documentPrevieModal img").attr('src', $(this).attr('src').replace("/tmp_thumb/", "/tmp/"));
             $("#documentPrevieModal").modal('show');
         })
     }
 }
 
-function change_status(id) {
-    PRIMARY_ID = id;
-    $("#delete_modal").modal('show');
-}
+$("#documentModal #change_status").on("click", function () {
+    update_user_status();
+});
 
-async function delete_current_record(data) {
+async function update_user_status(data) {
 
-    if (data && data != null && data.success == true) {
+    if (data && data != null && data.status == true) {
         hideLoading();
         PRIMARY_ID = 0;
         showMessage(data.message);
         await table.clearPipeline().draw();
         return false;
     }
-    else if (data && data != null && data.success == false) {
+    else if (data && data != null && data.status == false) {
         hideLoading();
         PRIMARY_ID = 0;
         showError(data.message);
@@ -123,10 +135,11 @@ async function delete_current_record(data) {
     else if (!data) {
         showLoading();
         var data = {
-            operation: "delete_banner"
+            operation: "update_user_status"
             , id: PRIMARY_ID
+            , user_status: $("#documentModal #user_status").val()
         };
-        doAPICall(data, delete_current_record);
+        doAPICall(data, update_user_status);
     }
     return false;
 }

@@ -1,8 +1,8 @@
 <?php
-
+include("add_user_plan.php");
 function add_user()
 {
-	global $outputjson, $gh, $db, $const,$tz_name, $tz_offset, $phone_format;
+	global $outputjson, $gh, $db;
 	$outputjson['status'] = 0;
 
 	$role_id = $gh->read("role_id");
@@ -40,11 +40,12 @@ function add_user()
 	$state_text = $get_names['state_text'];
 
 	$city_preferance = [$city_id];
+	$city_preferance_name = [];
 	$new_city = array(
 		"id"=>$city_id,
 		"name"=>$city_text
 	);
-	$city_preferance_name = array_push([], $new_city);;
+	array_push($city_preferance_name, $new_city);;
 
 	$tableData = array(
 		"role_id"=>$role_id,
@@ -67,7 +68,7 @@ function add_user()
 	$token = md5(date('YmdHis')).'_'.md5($result);
     if ($result) {
 		$db->update("tbl_users", array("token"=>$token), array("id"=>$result));
-		
+		add_user_plan(array("user_id"=>$result, "plan_id"=>1));
 		$userData = getUsersDetails($result, false);
 		$outputjson['message'] = "User signedup successfully";
 		$outputjson['status'] = 1;

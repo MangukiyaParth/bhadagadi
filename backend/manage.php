@@ -15,6 +15,9 @@
 	$db = new MysqliDB(db_host, db_user, db_pass, db_name);
 	$gh = new SUPPORT();
 
+	$login_not_require_operation = array("login_user","add_user","get_state","get_city","get_all_basics","get_car_type","get_plans");
+	$plan_not_require_operation = array("login_user","add_user","get_state","get_city","get_all_basics","get_car_type","get_plans","add_user_plan");
+
 	$operation = $gh->read("operation","");
 	$token = $gh->read("token","");
 	$user_id = $gh->read("user_id",0);
@@ -26,17 +29,46 @@
 		$md5_user_id = $explode_token[1];
 		
 		$loggedin_userData = getUsersDetails($md5_user_id, true);
-		$city_preferance = [];
-		$city_preferance_name = [];
-		if(!empty($loggedin_userData['city_preferance']))
-		{
-			$city_preferance = json_decode($loggedin_userData['city_preferance']);
-			$city_preferance_name = json_decode($loggedin_userData['city_preferance_name']);
-		}
-		$loggedin_userData["city_preferance"] = $city_preferance;
-		$loggedin_userData["city_preferance_name"] = $city_preferance_name;
+		if($loggedin_userData){
+			if(isset($operation) && !in_array($operation, $plan_not_require_operation) && $loggedin_userData['has_active_plan'] == 0){
+				$error = "Plan is not active for use Id: ".$loggedin_userData['id'];
+				$gh->Log($error);
+		
+				$outputjson['message'] = "Sorry! You don't have any active plan, Please purchase any plan to continue this service.";
+				$outputjson['status'] = -1;
+				$outputjson['data'] = [];
+				$response_string = json_encode(($outputjson), JSON_PRETTY_PRINT);
+				echo $response_string;
+				return;
+			}
+			$city_preferance = [];
+			$city_preferance_name = [];
+			if(!empty($loggedin_userData['city_preferance']))
+			{
+				$city_preferance = json_decode($loggedin_userData['city_preferance']);
+				$city_preferance_name = json_decode($loggedin_userData['city_preferance_name']);
+			}
+			$loggedin_userData["city_preferance"] = $city_preferance;
+			$loggedin_userData["city_preferance_name"] = $city_preferance_name;
 
-		$loggedin_user = $loggedin_userData;
+			$loggedin_user = $loggedin_userData;
+		}
+		else {
+			$outputjson['message'] = "Invalid Token!";
+			$outputjson['status'] = -2;
+			$outputjson['data'] = [];
+			$response_string = json_encode(($outputjson), JSON_PRETTY_PRINT);
+			echo $response_string;
+			return;
+		}
+	}
+	elseif (!in_array($operation, $login_not_require_operation)){
+		$outputjson['message'] = "Token not Found.";
+		$outputjson['status'] = -2;
+		$outputjson['data'] = [];
+		$response_string = json_encode(($outputjson), JSON_PRETTY_PRINT);
+		echo $response_string;
+		return;
 	}
 
 	if(isset($_POST) && count($_POST) > 0) {
@@ -99,7 +131,7 @@
 	}
 	else {
 		if ($user_id > 0 && $user_id != '') {
-			$user = $db->execute("SELECT usr.* FROM `tbl_users` as usr WHERE usr.id = " . $user_id . " LIMIT 0,1");
+			$user = $db->execute("SELECT usr.* FROM `tbl_users` as usr WHERE usr.id = " . $user_id . " LIMIT 1");
 			if (count($user) > 0) {
 				$userObj = $user[0];
 				$gh->current_user = $userObj;
@@ -172,17 +204,27 @@
 
 	function getUsersDetails($id, $is_md5) {
 		global $db;
+		$current_date = date('Y-m-d H:i:s');
 		if($is_md5)
 		{
-			$query_user = "SELECT usr.* FROM tbl_users as usr WHERE md5(id) = '$id'";
+			$query_user = "SELECT usr.*, 
+				(SELECT COUNT(id) FROM `tbl_users_plan` WHERE user_id = usr.id AND STR_TO_DATE('$current_date','%Y-%m-%d %H:%i:%s') BETWEEN STR_TO_DATE(start_date,'%Y-%m-%d %H:%i:%s') AND STR_TO_DATE(end_date,'%Y-%m-%d %H:%i:%s') LIMIT 1) AS has_active_plan
+				FROM tbl_users as usr WHERE md5(id) = '$id'";
 			$rows = $db->execute($query_user);
 		}
 		else
 		{
-			$query_user = "SELECT usr.* FROM tbl_users as usr WHERE id = $id";
+			$query_user = "SELECT usr.*,
+				(SELECT COUNT(id) FROM `tbl_users_plan` WHERE user_id = usr.id AND STR_TO_DATE('$current_date','%Y-%m-%d %H:%i:%s') BETWEEN STR_TO_DATE(start_date,'%Y-%m-%d %H:%i:%s') AND STR_TO_DATE(end_date,'%Y-%m-%d %H:%i:%s') LIMIT 1) AS has_active_plan 
+				FROM tbl_users as usr WHERE id = $id";
 			$rows = $db->execute($query_user);
 		}
-		return $rows[0];
+		if ($rows != null && is_array($rows) && count($rows) > 0) {
+			return $rows[0];
+		}
+		else{
+			return null;
+		}
 	}
 	
 	function stripslashes_recursively($value) {

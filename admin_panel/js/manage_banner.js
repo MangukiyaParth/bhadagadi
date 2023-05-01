@@ -161,14 +161,14 @@ function delete_record(id) {
 
 async function delete_current_record(data) {
 
-    if (data && data != null && data.success == true) {
+    if (data && data != null && data.status == true) {
         hideLoading();
         PRIMARY_ID = 0;
         showMessage(data.message);
         await table.clearPipeline().draw();
         return false;
     }
-    else if (data && data != null && data.success == false) {
+    else if (data && data != null && data.status == false) {
         hideLoading();
         PRIMARY_ID = 0;
         showError(data.message);
