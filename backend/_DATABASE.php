@@ -14,7 +14,7 @@ class MysqliDB
         or die('There was a problem connecting to the database');
 
         $this->_mysqli->set_charset('utf8mb4');
-
+        $this->_mysqli->prepare("SET time_zone = '+5:30';")->execute();
         mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
     }

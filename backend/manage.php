@@ -30,7 +30,7 @@
 		
 		$loggedin_userData = getUsersDetails($md5_user_id, true);
 		if($loggedin_userData){
-			if(isset($operation) && !in_array($operation, $plan_not_require_operation) && $loggedin_userData['has_active_plan'] == 0){
+			if(isset($operation) && !in_array($operation, $plan_not_require_operation) && $loggedin_userData['has_active_plan'] == 0 && $loggedin_userData['role_id'] != 1){
 				$error = "Plan is not active for use Id: ".$loggedin_userData['id'];
 				$gh->Log($error);
 		

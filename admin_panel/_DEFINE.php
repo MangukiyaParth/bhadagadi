@@ -7,7 +7,7 @@
     error_reporting(0);
     error_reporting(E_ALL);
 
-    date_default_timezone_set('UTC');
+    date_default_timezone_set('Asia/Kolkata');
     ini_set("gd.jpeg_ignore_warning", 1);
 
 

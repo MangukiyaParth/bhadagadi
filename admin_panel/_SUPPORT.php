@@ -287,7 +287,7 @@ if(get_magic_quotes_gpc()){
 
 	function getLocalDate($mysql_date, $tz = "UTC", $format = "Y-m-d H:i:s")
 	{
-		$UTC = new DateTimeZone("UTC");
+		$UTC = new DateTimeZone("Asia/Kolkata");
 		$date = new DateTime($mysql_date, $UTC);
 		$newTZ = new DateTimeZone($tz);
 		$date->setTimezone($newTZ);

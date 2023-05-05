@@ -9,14 +9,13 @@ function update_user_profile()
 	$name = $gh->read("name");
 	$business_name = $gh->read("business_name");
 	$business_description = $gh->read("business_description");
-	$email = $gh->read("email");
-	$state_id = $gh->read("state_id");
-	$city_id = $gh->read("city_id");
-	$pin_code = $gh->read("pin_code");
-	$pin_code = $gh->read("pin_code");
+	// $email = $gh->read("email");
+	// $state_id = $gh->read("state_id");
+	// $city_id = $gh->read("city_id");
+	// $pin_code = $gh->read("pin_code");
     $dateNow = date('Y-m-d H:i:s');
 
-	if(empty($business_name) || empty($name) || empty($email) || empty($state_id) || empty($city_id) || empty($pin_code)){
+	if(empty($business_name) || empty($name)){
 		$outputjson['message'] = "Please fill all require fields";
 		return;
 	}
@@ -25,10 +24,10 @@ function update_user_profile()
 		"name"=>$name,
 		"business_name"=>$business_name,
 		"business_description"=>$business_description,
-		"email"=>$email,
-		"state_id"=>$state_id,
-		"city_id"=>$city_id,
-		"pin_code"=>$pin_code,
+		// "email"=>$email,
+		// "state_id"=>$state_id,
+		// "city_id"=>$city_id,
+		// "pin_code"=>$pin_code,
 	);
 	$result = $db->update("tbl_users", $tableData, array("MD5(id)"=>$md5_user_id));
 	

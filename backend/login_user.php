@@ -30,7 +30,7 @@ function login_user()
     if ($rows != null && is_array($rows) && count($rows) > 0) {
 		$user = $rows[0];
 
-		if($user['has_active_plan'] == 0){
+		if($user['has_active_plan'] == 0 && $user['role_id'] != 1){
 			$error = "Plan is not active for use Id: ".$user['id'];
 			$gh->Log($error);
 	
