@@ -74,7 +74,8 @@ function login_user()
 			$user["city_preferance"] = $city_preferance;
 			$user["city_preferance_name"] = $city_preferance_name;
 			
-            $outputjson["data"] = $user;
+            // $outputjson["data"] = $user;
+			$outputjson['data'] = getUsersDetails($user['id'], false);
 		}
 		else{
 			$outputjson['message'] = "Invalid password. Try again or use Forgot Password. If you are an employee and do not have an email associated with your account, contact your Account Administrator.";
@@ -85,5 +86,3 @@ function login_user()
 	}
 
 }
-
-?>

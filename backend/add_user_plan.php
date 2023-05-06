@@ -2,7 +2,7 @@
 
 function add_user_plan($params)
 {
-	global $outputjson, $gh, $db;
+	global $outputjson, $gh, $db, $md5_user_id;
 	$outputjson['status'] = 0;
 
 	$user_id = $gh->read("user_id", $params['user_id']);
@@ -32,10 +32,9 @@ function add_user_plan($params)
 		$db->insert("tbl_users_plan", $insert_data);
 		$outputjson['status'] = 1;
 		$outputjson['message'] = 'Plan added successfully.';
+		$outputjson['data'] = getUsersDetails($md5_user_id, true);
 	}
 	else {
 		$outputjson['message'] = "No Plans Found!";
 	}
 }
-
-?>

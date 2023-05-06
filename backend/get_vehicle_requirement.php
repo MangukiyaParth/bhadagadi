@@ -4,11 +4,11 @@ function get_vehicle_requirement()
 {
 	global $outputjson, $gh, $db, $const,$tz_name, $tz_offset, $loggedin_user;
 	$outputjson['status'] = 0;
-    $dateNow = date('Y-m-d H:i:s');
 	$loggedin_user_id = $loggedin_user['id'];
 	$city_preferance = $loggedin_user['city_preferance'];
 	$status = $gh->read("status", 0); //1=active, 2=history, 3=assigned
 	$page = $gh->read("page", 1);
+	$car_type = $gh->read("car_type", 0);
 	$length = 10;
 	$start = ($page - 1) * $length;
 
@@ -22,10 +22,14 @@ function get_vehicle_requirement()
 	else if($status == 3){
 		$where = " WHERE assigned_id > 0 AND vr.created_by =  $loggedin_user_id";
 	}
-	if($city_preferance)
+	if($city_preferance && $status==0)
 	{
 		$city_preferance = implode(',', array_map('intval', $city_preferance));
 		$where.=" AND (vr.from IN (". $city_preferance .") OR vr.to IN (". $city_preferance ."))";
+	}
+	if($car_type > 0)
+	{
+		$where.= " AND vr.car_type =  $car_type";
 	}
     $requirement_query = "SELECT vr.*, user.business_name, user.phone , au.business_name AS assigned_business_name, au.phone AS assigned_phone 
 		FROM tbl_vehicle_requirement vr 
@@ -46,5 +50,3 @@ function get_vehicle_requirement()
 	}
 
 }
-
-?>

@@ -158,7 +158,7 @@
 					$params = $_REQUEST;
 					$operation($params);
 					/***AUDIT LOG START****/
-					$str_arr = explode ("_", $operation);
+					// $str_arr = explode ("_", $operation);
 					include("log_manage.php");
 					log_manage($params,$outputjson,$operation) ;
 					/***AUDIT LOG OVER****/
@@ -256,8 +256,3 @@
 	interface MyPackageThrowable extends Throwable {}
 
 	class MyPackageException extends Exception implements MyPackageThrowable {}
-
-
-
-?>
-
