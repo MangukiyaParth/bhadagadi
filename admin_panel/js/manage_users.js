@@ -73,11 +73,36 @@ function get_data() {
         },
         {
             "targets": 4,
+            "className": "text-left",
+            "data": "id",
+            "render": function (data, type, row, meta) {
+                var planName = "-";
+                if (row.active_plan_name.includes('Expired')) {
+                    planName = `<span class="text-white status-txt bg-danger">${row.active_plan_name.replace("[Expired]", "")}</span>`;
+                }
+                else if (row.active_plan_name.includes('Free')) {
+                    planName = `<span class="status-txt bg-light">${row.active_plan_name}</span>`;
+                }
+                else if (row.active_plan_name.includes('Basic')) {
+                    planName = `<span class="text-white status-txt bg-secondary">${row.active_plan_name}</span>`;
+                }
+                else if (row.active_plan_name.includes('Populer')) {
+                    planName = `<span class="text-white status-txt bg-info">${row.active_plan_name}</span>`;
+                }
+                else if (row.active_plan_name.includes('Advance')) {
+                    planName = `<span class="text-white status-txt bg-primary">${row.active_plan_name}</span>`;
+                }
+                return type === 'display' ? planName : "";
+            }
+        },
+        {
+            "targets": 5,
             "className": "text-end",
             "data": "id",
             "render": function (data, type, row, meta) {
                 return type === 'display' ?
-                    '<button class="btn btn-primary rounded-pill tbl-btn edit-btn" onclick="view_documents(' + meta.row + ')"><i class="uil-image"></i></button>' : "";
+                    '<button class="btn btn-primary rounded-pill tbl-btn edit-btn" onclick="view_documents(' + meta.row + ')"><i class="uil-image"></i></button>\
+                    <button class="btn btn-info rounded-pill tbl-btn edit-btn" onclick="view_plans(' + meta.row + ')"><i class="mdi mdi-badge-account-horizontal-outline"></i></button>' : "";
             }
         }]
     });
@@ -121,14 +146,12 @@ async function update_user_status(data) {
 
     if (data && data != null && data.status == true) {
         hideLoading();
-        PRIMARY_ID = 0;
         showMessage(data.message);
         await table.clearPipeline().draw();
         return false;
     }
     else if (data && data != null && data.status == false) {
         hideLoading();
-        PRIMARY_ID = 0;
         showError(data.message);
         return false;
     }
@@ -142,4 +165,68 @@ async function update_user_status(data) {
         doAPICall(data, update_user_status);
     }
     return false;
+}
+
+function view_plans(index) {
+    if (TBLDATA.length > 0) {
+        var currData = TBLDATA[index];
+        var planDetails = currData.plan_details;
+        var html = "";
+        if (planDetails && planDetails != "") {
+            html = `<table class="table dt-responsive nowrap w-100 no-footer">
+                <thead>
+                    <tr>
+                        <th class="text-start">Plan</th>
+                        <th>Tenure</th>
+                        <th class="text-start">Price</th>
+                        <th>Purchase Date</th>
+                    </tr>
+                </thead>
+                <tbody>`;
+            $.each(planDetails, function (index, planData) {
+                var rowClass = "";
+                switch (planData.plan_id) {
+                    case "2":
+                        rowClass = "table-secondary";
+                        break;
+                    case "3":
+                        rowClass = "table-info";
+                        break;
+                    case "4":
+                        rowClass = "table-primary";
+                        break;
+                }
+                html += `<tr class="${rowClass}">
+                        <td class="text-start">${planData.plan_name}</td>
+                        <td>${changeDateFormat(planData.start_date)} <b> To </b> ${changeDateFormat(planData.end_date)}</td>
+                        <td class="text-start">${planData.price_text}</td>
+                        <td>${planData.created_at}</td>
+                    </tr>`;
+            });
+            html += `</tbody>
+            <table>`;
+        }
+        else {
+            html = "No Plans Found!";
+        }
+        $("#planDetailModal #planData").html(html);
+        $("#planDetailModal").modal('show');
+    }
+}
+
+function changeDateFormat(date) {
+    var fullDate = date.split(" ");
+    var onlyDate = fullDate[0];
+    var onlyTime = fullDate[1];
+    var newDate = onlyDate;
+    var newTime = onlyTime;
+    if (onlyDate) {
+        onlyDate = onlyDate.split('-');
+        newDate = onlyDate[2] + "/" + onlyDate[1] + "/" + onlyDate[0];
+    }
+    if (onlyTime) {
+        onlyTime = onlyTime.split(':');
+        newTime = onlyTime[0] + ":" + onlyTime[1] + " " + ((onlyTime[0] < 12) ? 'AM' : 'PM');
+    }
+    return newDate + ' ' + newTime;
 }

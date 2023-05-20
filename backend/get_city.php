@@ -12,6 +12,7 @@ function get_city()
 	{
 		$city_qry.= " WHERE state_id = $state";
 	}
+	$city_qry.= " ORDER BY CASE WHEN state_id = 12 THEN 0 ELSE 1 END ";
     $rows = $db->execute($city_qry);
     
     if ($rows != null && is_array($rows) && count($rows) > 0) {
@@ -24,5 +25,3 @@ function get_city()
 	}
 
 }
-
-?>

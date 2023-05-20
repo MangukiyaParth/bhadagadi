@@ -93,8 +93,7 @@ $.fn.dataTable.pipeline = function (opts) {
                     if (cacheLower != drawStart) {
                         json.data.splice(0, drawStart - cacheLower);
                     }
-                    if (requestLength >= -1) {
-                        console.log(json);
+                    if (requestLength >= -1 && json.data && json.data.length > 0) {
                         json.data.splice(requestLength, json.data.length);
                     }
                     TBLDATA = json.data;

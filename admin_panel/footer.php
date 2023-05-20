@@ -1,18 +1,24 @@
 <?php
-	$user = $gh->get_session("user");
-	$include_javscript_at_bottom = '<script src="' . $gh->auto_version('js/common.js') . '"></script>'.$include_javscript_at_bottom;
-	$include_javscript_at_bottom = str_replace('<script ', '<script defer ', $include_javscript_at_bottom);
-	include 'theme_settings.php';
+$user = $gh->get_session("user");
+$include_javscript_at_bottom = '<script src="' . $gh->auto_version('js/common.js') . '"></script>' . $include_javscript_at_bottom;
+$include_javscript_at_bottom = str_replace('<script ', '<script defer ', $include_javscript_at_bottom);
+include 'theme_settings.php';
 ?>
-	<footer class="footer <?php if($current_page == 'login.php'){ echo 'footer-alt'; } ?>">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-12 <?php if($current_page != 'login.php'){ echo 'text-md-end'; } ?> footer-links d-none d-md-block">
-					<script>document.write(new Date().getFullYear())</script> © Bhadagadi
-				</div>
-			</div>
-		</div>
-	</footer>
+<footer class="footer <?php if ($current_page == 'login.php') {
+                            echo 'footer-alt';
+                        } ?>">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 <?php if ($current_page != 'login.php') {
+                                        echo 'text-md-end';
+                                    } ?> footer-links d-none d-md-block">
+                <script>
+                    document.write(new Date().getFullYear())
+                </script> © Bhadagadi
+            </div>
+        </div>
+    </div>
+</footer>
 
 <div id="delete_modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-sm">
@@ -29,7 +35,7 @@
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
 </div>
-	
+
 <!-- Vendor js -->
 <script src="assets/js/vendor.min.js"></script>
 
@@ -40,14 +46,18 @@
 <script src="assets/js/typeahead.bundle.min.js"></script>
 
 <!-- nprogress Js -->
-<script defer src="assets/js/nprogress.js" ></script>
-<script defer src="assets/js/jstz.min.js" ></script>
-<script defer src="assets/js/moment.min.js" ></script>
+<script defer src="assets/js/nprogress.js"></script>
+<script defer src="assets/js/jstz.min.js"></script>
+<script defer src="assets/js/moment.min.js"></script>
 <script defer src="assets/js/daterangepicker.js"></script>
 <script defer src="assets/js/pnotify.custom.js"></script>
 <script defer src="assets/js/jquery.dataTables.min.js"></script>
 <script defer src="assets/js/dataTables.bootstrap5.min.js"></script>
 <script defer src="assets/js/select2.min.js"></script>
+
+<!-- Charts js -->
+<script src="assets/js/chart.min.js"></script>
+<script src="assets/js/apexcharts.min.js"></script>
 
 <!-- App js -->
 <script src="assets/js/app.min.js"></script>
@@ -66,4 +76,5 @@ echo $include_javscript_at_bottom;
 <script src="assets/js/dropzone.min.js"></script>
 <script src="assets/js/component.fileupload.js"></script>
 </body>
+
 </html>

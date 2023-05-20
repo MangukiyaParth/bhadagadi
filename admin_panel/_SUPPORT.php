@@ -38,25 +38,25 @@ class CacheHelper {
         static::$InstanceCache = new static();
 
         $path = __DIR__ . "/upload/";
-        if (IS_PRODUCTION == true) {
-            $parent_dir1 = dirname(__FILE__); // /var/www/html/production/admin_panel
-            $parent_dir2 = dirname(dirname(dirname(__FILE__))); // /var/www/html
-            $parent_dir = str_replace($parent_dir2, "", $parent_dir1); //  /production/admin_panel
-            //$this->Log("parent_dir = ".$parent_dir);
+        // if (IS_PRODUCTION == true) {
+        //     $parent_dir1 = dirname(__FILE__); // /var/www/html/production/admin_panel
+        //     $parent_dir2 = dirname(dirname(dirname(__FILE__))); // /var/www/html
+        //     $parent_dir = str_replace($parent_dir2, "", $parent_dir1); //  /production/admin_panel
+        //     //$this->Log("parent_dir = ".$parent_dir);
 
-            $environment = IS_PRODUCTION == true ? "production" : "beta";
+        //     $environment = IS_PRODUCTION == true ? "production" : "beta";
             
-            // https://github.com/PHPSocialNetwork/phpfastcache/issues/614#issuecomment-600010179
-            // change path to dedicated cache directory..  /tmp should be for temporary usage only.
-            $path = "/www/".$environment."/logs/tmp/";
+        //     // https://github.com/PHPSocialNetwork/phpfastcache/issues/614#issuecomment-600010179
+        //     // change path to dedicated cache directory..  /tmp should be for temporary usage only.
+        //     $path = "/www/".$environment."/logs/tmp/";
 
-            //if (!is_dir($path)) mkdir($path, 0777, true);
-            if (!is_dir($path) && !file_exists($path)) {
-                $oldmask = umask(0);
-                mkdir($path, 0777, true);
-                umask($oldmask);
-            }
-        }
+        //     //if (!is_dir($path)) mkdir($path, 0777, true);
+        //     if (!is_dir($path) && !file_exists($path)) {
+        //         $oldmask = umask(0);
+        //         mkdir($path, 0777, true);
+        //         umask($oldmask);
+        //     }
+        // }
         CacheManager::setDefaultConfig(new ConfigurationOption([
             'path' => $path, // or in windows "C:/tmp/"
         ]));
@@ -817,4 +817,3 @@ if(get_magic_quotes_gpc()){
 		return !$enable_old_settings;
 	}
 }
-?>

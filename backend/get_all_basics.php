@@ -9,7 +9,7 @@ function get_all_basics()
 	$states_user = "SELECT * FROM tbl_states";
     $state_rows = $db->execute($states_user);
 
-    $city_qry = "SELECT * FROM tbl_cities";
+    $city_qry = "SELECT * FROM tbl_cities ORDER BY CASE WHEN state_id = 12 THEN 0 ELSE 1 END";
     $city_rows = $db->execute($city_qry);
     
 	$car_type_qry = "SELECT * FROM tbl_car_type";
@@ -24,5 +24,3 @@ function get_all_basics()
 	$outputjson['message'] = 'success.';
 	$outputjson["data"] = $rows;
 }
-
-?>

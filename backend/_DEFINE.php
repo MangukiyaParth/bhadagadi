@@ -52,5 +52,4 @@ define("LOG_MODE", "1");
 // Default: false,  Set to true when releasing website changes so no one uses it.
 define("WEBSITE_UNDER_MAINTENANCE", false);
 
-define("FCM_KEY", "AAAATLkI3Ww:APA91bEzSbzel-X_Ed_Jw9K_rHgixu9GUy8ryeZiGTRUo5Kn7jSIJ5aHauM76qKIHVbI6Ry4P5bGpGdOSF4h_ErwtVtRgVdxJjRi11EXXjrMT86GjYCBM67kDayWO8k18o-iugnaXdWX");
-?>
+define("FCM_KEY", "AAAAzD3KQXA:APA91bEZ5U7r_7VvAsQFWoNP1ecburT_C0VUx9FVR1iWkeR53_AyMBdyOR5LZePcmEFaljQ--g0evovk59U3UTRttTIOhEdUxxYuzBPZPy9p_92Ce4rG-5A2-tQUR3m3YR5pvw6i9xHr");

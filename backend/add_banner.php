@@ -24,7 +24,7 @@ function add_banner()
 
 		// Check if file already exists
 		if (file_exists($target_file)) {
-			$target_file = str_replace(".".$imageFileType, "", $target_file,).time().".".$imageFileType;
+			$target_file = str_replace(".".$imageFileType, "", $target_file).time().".".$imageFileType;
 		}
 
 		// Check file size
@@ -70,5 +70,3 @@ function add_banner()
 	}
 
 }
-
-?>

@@ -29,21 +29,26 @@ $include_javscript_library_before_custom_script_at_bottom .= "<script>
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
     }
+
     .doc-title {
         font-size: 18px;
     }
+
     .img-Div {
         width: 100%;
         height: 250px;
         border-radius: 10px;
     }
+
     .img-Div:not(.sample-img) {
         box-shadow: 4px 4px 12px 2px #CDCDCD;
     }
+
     .img-Div:not(.sample-img):hover {
         box-shadow: 4px 4px 12px 2px #9A9A9A;
         border-radius: 10px;
     }
+
     .sample-img {
         background-image: url(assets/images/icon-photo.png);
         background-position: center;
@@ -52,18 +57,21 @@ $include_javscript_library_before_custom_script_at_bottom .= "<script>
         border: 2px dashed #EEE;
         border-radius: 10px;
     }
-    .img-Div img{
+
+    .img-Div img {
         width: 100%;
         height: 100%;
         border-radius: 10px;
         /* object-fit: contain; */
         cursor: pointer;
     }
+
     #documentPrevieModal img {
         height: calc(100vh - 200px);
         object-fit: fill;
     }
-    span.user_status:before{
+
+    span.user_status:before {
         display: inline-block;
         content: ' ';
         height: 12px;
@@ -72,22 +80,32 @@ $include_javscript_library_before_custom_script_at_bottom .= "<script>
         margin-right: 10px;
         border-radius: 6px;
     }
-    span.user_status.verified:before{
+
+    span.user_status.verified:before {
         background: #0acf97 !important;
     }
-    span.user_status.pending:before{
+
+    span.user_status.pending:before {
         background: #ffc35a !important;
     }
-    span.user_status.rejected:before{
+
+    span.user_status.rejected:before {
         background: #fa5c7c !important;
     }
-    span.user_status.suspended:before{
+
+    span.user_status.suspended:before {
         background: #dc3545 !important;
+    }
+
+    .status-txt {
+        border-radius: 15px;
+        padding: 5px 15px;
+        font-weight: 700;
     }
 </style>
 <div class="content-page">
     <div class="content">
-        
+
         <!-- Start Content-->
         <div class="container-fluid">
 
@@ -98,7 +116,7 @@ $include_javscript_library_before_custom_script_at_bottom .= "<script>
                     </div>
                 </div>
             </div>
-            
+
             <div class="row">
                 <div class="col-xl-12 col-lg-12">
                     <div class="card">
@@ -111,10 +129,11 @@ $include_javscript_library_before_custom_script_at_bottom .= "<script>
                                             <th width="20%" class="text-start">Contact</th>
                                             <th width="20%" class="text-start">Business</th>
                                             <th width="20%" class="text-start">Location</th>
-                                            <th width="20%" class="text-end">Action</th>
+                                            <th width="10%" class="text-start">Active Plan</th>
+                                            <th width="10%" class="text-end">Action</th>
                                         </tr>
                                     </thead>
-                                </table>   
+                                </table>
                             </div>
 
                         </div> <!-- end card-body-->
@@ -190,6 +209,24 @@ $include_javscript_library_before_custom_script_at_bottom .= "<script>
                 <div class="row">
                     <div class="col-sm-12 text-center">
                         <img src="" />
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" id="planDetailModal" tabindex="-1" role="dialog" aria-labelledby="scrollableModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-full-width" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="scrollableModalTitle">Plans</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+            </div>
+            <div class="modal-body ps-5 pe-5 pt-4 pb-4">
+                <div class="row">
+                    <div class="col-sm-12 text-center" id="planData">
+
                     </div>
                 </div>
             </div>

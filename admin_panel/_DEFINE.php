@@ -45,8 +45,8 @@
 
     if(IS_PRODUCTION)
     {
-        define("API_SERVICE_URL", "http://".$_SERVER['HTTP_HOST']."/backend/");
-        define("ADMIN_PANEL_URL", "http://".$_SERVER['HTTP_HOST']."/admin_panel/");
+        define("API_SERVICE_URL", "https://".$_SERVER['HTTP_HOST']."/backend/");
+        define("ADMIN_PANEL_URL", "https://".$_SERVER['HTTP_HOST']."/admin_panel/");
         define("ALLOW_EXTERNAL_SCRIPT","1");
         define("ALLOW_MIXPANEL_SCRIPT","1");
     }
@@ -63,5 +63,3 @@
     define("PHPFASTCACHE_EXPIRE_SEC", 30*24*60*60); // 30 days
 
     header('Access-Control-Allow-Origin: *');
-    
-?>

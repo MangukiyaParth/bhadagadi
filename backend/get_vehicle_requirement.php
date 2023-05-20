@@ -18,12 +18,12 @@ function get_vehicle_requirement()
 	} else if ($status == 2) {
 		$where = " WHERE status = 1 AND vr.created_by =  $loggedin_user_id";
 	} else if ($status == 3) {
-		$where = " WHERE assigned_id > 0 AND vr.created_by =  $loggedin_user_id";
+		$where = " WHERE assigned_id > 0 AND vr.assigned_id =  $loggedin_user_id";
 	}
 	if ($status == 0) {
 		if ($city_preferance) {
 			$city_preferance = implode(',', array_map('intval', $city_preferance));
-			$where .= " AND (vr.from IN (" . $city_preferance . ") OR vr.to IN (" . $city_preferance . "))";
+			$where .= " AND (vr.from IN (" . $city_preferance . ") OR vr.to IN (" . $city_preferance . ") OR vr.created_by =  $loggedin_user_id)";
 		} else {
 			$where .= " AND 1=2 ";
 		}
