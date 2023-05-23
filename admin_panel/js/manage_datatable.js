@@ -63,6 +63,7 @@ $.fn.dataTable.pipeline = function (opts) {
             request.length = requestLength * conf.pages;
             request.op = conf.op;
             request.operation = conf.operation;
+            request.status = conf.status;
             request.token = conf.token;
 
             // Provide the same `data` options as DataTables.

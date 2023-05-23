@@ -54,6 +54,13 @@
                 </a>
             </li>
 
+            <li class="side-nav-item">
+                <a href="manage_requirements.php" class="side-nav-link">
+                    <i class="uil-user"></i>
+                    <span> Requirements </span>
+                </a>
+            </li>
+
         </ul>
         <!--- End Sidemenu -->
 

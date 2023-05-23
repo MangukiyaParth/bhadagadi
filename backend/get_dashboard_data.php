@@ -11,7 +11,7 @@ function get_dashboard_data()
 	$earning_chart_dates = array_column($earning_chart_rows, 'purchase_date');
 	$earning_chart_amount = array_column($earning_chart_rows, 'amount');
 
-	$earning_qry = "SELECT IFNULL((SELECT SUM(plan.price) FROM tbl_users_plan uplan INNER JOIN tbl_plans plan ON plan.id = uplan.plan_id WHERE DATE_FORMAT(created_at,'%Y-%m-%d') = '$today' ),0) AS today_earning,
+	$earning_qry = "SELECT IFNULL((SELECT SUM(plan.price) FROM tbl_users_plan uplan INNER JOIN tbl_plans plan ON plan.id = uplan.plan_id WHERE DATE_FORMAT(created_at,'%Y-%m-%d') = STR_TO_DATE('$today','%Y-%m-%d') ),0) AS today_earning,
 	IFNULL((SELECT SUM(plan.price) FROM tbl_users_plan uplan INNER JOIN tbl_plans plan ON plan.id = uplan.plan_id WHERE DATE_FORMAT(created_at,'%Y-%m-%d') BETWEEN DATE_SUB(CURDATE(), INTERVAL WEEKDAY(CURDATE()) DAY) AND STR_TO_DATE('$today','%Y-%m-%d') ),0) AS week_earning,
 	IFNULL((SELECT SUM(plan.price) FROM tbl_users_plan uplan INNER JOIN tbl_plans plan ON plan.id = uplan.plan_id WHERE DATE_FORMAT(created_at,'%Y-%m-%d') BETWEEN DATE_FORMAT(NOW() ,'%Y-%m-01') AND STR_TO_DATE('$today','%Y-%m-%d') ),0) AS month_earning";
 	$earning_rows = $db->execute($earning_qry);
@@ -23,7 +23,7 @@ function get_dashboard_data()
 	$users_chart_dates = array_column($users_chart_rows, 'insert_at');
 	$users_chart_cnt = array_column($users_chart_rows, 'user_cnt');
 
-	$user_cnt_qry = "SELECT IFNULL((SELECT COUNT(id) FROM tbl_users WHERE id <> 1 AND DATE_FORMAT(insert_at,'%Y-%m-%d') = '$today' ),0) AS today_user_cnt,
+	$user_cnt_qry = "SELECT IFNULL((SELECT COUNT(id) FROM tbl_users WHERE id <> 1 AND DATE_FORMAT(insert_at,'%Y-%m-%d') = STR_TO_DATE('$today','%Y-%m-%d') ),0) AS today_user_cnt,
 	IFNULL((SELECT COUNT(id) FROM tbl_users WHERE id <> 1 AND DATE_FORMAT(insert_at,'%Y-%m-%d') BETWEEN DATE_SUB(CURDATE(), INTERVAL WEEKDAY(CURDATE()) DAY) AND STR_TO_DATE('$today','%Y-%m-%d') ),0) AS week_user_cnt,
 	IFNULL((SELECT COUNT(id) FROM tbl_users WHERE id <> 1 AND DATE_FORMAT(insert_at,'%Y-%m-%d') BETWEEN DATE_FORMAT(NOW() ,'%Y-%m-01') AND STR_TO_DATE('$today','%Y-%m-%d') ),0) AS month_user_cnt";
 	$user_cnt_rows = $db->execute($user_cnt_qry);

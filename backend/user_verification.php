@@ -6,7 +6,7 @@ function user_verification()
 
 	$phone = $gh->read("phone");
 	$fcm_token = $gh->read("fcm_token");
-	$default_numbfer = '9898563139';
+	$default_numbfer = '919898563139';
 	if (empty($phone)) {
 		$outputjson['message'] = "Please fill Phone no";
 		return;

@@ -14,7 +14,7 @@ include 'theme_settings.php';
                                     } ?> footer-links d-none d-md-block">
                 <script>
                     document.write(new Date().getFullYear())
-                </script> © Bhadagadi
+                </script> © Taxi Group
             </div>
         </div>
     </div>
